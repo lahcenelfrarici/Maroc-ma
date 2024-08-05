@@ -1,0 +1,27 @@
+body {
+  overflow-x: hidden;
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+span,
+p,
+li,
+button {
+  font-family: 'Noto Kufi Arabic', sans-serif !important;
+}
+.b-breadcrumb-list li{
+  padding: 0 0 0 1.375rem;
+}
+.b-breadcrumb-list li:after {
+  left: 0;
+  right: auto;
+}
+footer-bottom .col:last-child {
+  justify-content: left;
+}
