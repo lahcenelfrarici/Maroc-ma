@@ -867,7 +867,8 @@ div#slider-element-maps .owl-dots .active {
   gap: 20px 0;
 }
 
-.actualites .row>div:first-child .card {
+.actualites .row>div:first-child .card ,
+.actualites .row>div:first-child .card a{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -920,9 +921,9 @@ div#slider-element-maps .owl-dots .active {
   width: 100%;
 }
 
-.wrapper-scroll:hover p {
+/* .wrapper-scroll:hover p {
   transform: scale(4);
-}
+} */
 
 .publication-container {
   display: flex;
@@ -1362,8 +1363,8 @@ div#slider-element-maps p {}
   color: #0F1B5C;
 }
 
-.service {
-  background-color: #0F1B5C;
+.bg-blue-gradient,.footer-top {
+  background-image: linear-gradient(200deg, #0F1B5C 60%,#335AB7 100%);
 }
 
 .all-item--service {
@@ -1719,7 +1720,6 @@ section {
 }
 
 .footer-top {
-  background-color: #0F1B5C;
   position: relative;
   z-index: 3;
   display: flex;
@@ -2329,9 +2329,9 @@ div#slider-element-maps .owl-dots .active {
   width: 100%;
 }
 
-.wrapper-scroll:hover p {
+/* .wrapper-scroll:hover p {
   transform: scale(4);
-}
+} */
 
 .publication-container {
   display: flex;
@@ -2906,7 +2906,9 @@ div#slider-element-maps p {}
   padding: 0;
 } */
 .actualites .info-top-title h2,
-.actualites .info-top-title p {
+.bg-blue-normal .info-top-title h2,
+.actualites .info-top-title p,
+.bg-blue-normal  .info-top-title p{
   color: #1C2E55;
 }
 
@@ -2981,6 +2983,7 @@ section:last-child {
 .date--actualites span {
   gap: 10px;
   display: flex;
+  color: #111111;
   align-items: center;
 }
 .bg-investisseurs{
@@ -3022,10 +3025,201 @@ section:last-child {
 .btn--investisseurs a {
   border: 1px solid #335AB7;
   color: #fff;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 10px;
 }
 
 .btn--investisseurs a:hover {
   background-color: #335AB7;
+}
+.title--le-maroc h3 {
+  font-size: 18px;
+  color: #fff;
+}
+
+.img--le-maroc {
+  height: 60px;
+}
+
+.img--le-maroc img {
+  height: 100%;
+  width: auto;
+}
+
+.all-box-le-maroc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px 0;
+}
+
+.item--le-maroc {
+  width: 32%;
+}
+
+.all-box-le-maroc > div:nth-child(4),.all-box-le-maroc > div:nth-child(5) {
+  width: 49%;
+}
+
+.item--le-maroc {
+  height: 197px;
+  background-color: #0F1B5C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 20px 0;
+}
+.item--le-maroc a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px 0;
+}
+.item--le-maroc:hover {
+  background-color: #335AB7;
+}
+
+
+.carte-item .info-top-title h2 {
+  color: #0F1B5C;
+}
+
+
+.carte-item .info-top-title p {
+  color: #0F1B5C;
+}
+
+.carte-item .info-top-title .title--parent-h2 {
+  padding: 0;
+}
+.wrapper-info-mohammed_vi {
+  max-width: 90%;
+  background-image: linear-gradient(200deg, #0F1B5C 60%,#335AB7 100%);
+  padding: 40px 40px 40px 22%;
+  height: 533px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.items--mohammed_vi {
+  display: flex;
+  padding: 90px 0 0 0;
+  position: relative;
+  justify-content: end;
+}
+
+.img--mohammed_vi {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.item--info-mohammed_vi h2 {
+  width: 65%;
+}
+
+.item--info-mohammed_vi {
+  display: flex;
+  flex-direction: column;
+  gap: 19px 0;
+}
+
+.item--info-mohammed_vi img {
+  height: 100%;
+  width: max-content;
+}
+
+.item--info-mohammed_vi p {
+  color: #fff;
+}
+
+.date-right--mohammed_vi {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-right--mohammed_vi img {
+  text-align: center;
+  margin: auto;
+}
+
+.date-right--mohammed_vi  span {
+  text-align: right;
+}
+.img--mohammed_vi img {
+  z-index: 22222;
+  position: relative;
+}
+
+.img--mohammed_vi .border {
+  position: absolute;
+  top: 34px;
+  left: 100px;
+  right: -32px;
+  bottom: -26px;
+  border: 2px solid #fff !important;
+  pointer-events: none;
+  z-index: 0;
+}
+.date-right--mohammed_vi .btn--investisseurs {
+  display: flex;
+  justify-content: right;
+  padding-top: 4%;
+}
+.title--publication {
+  z-index: 9;
+  position: absolute;
+  bottom: 75px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: baseline;
+  justify-content: end;
+  padding: 0 30px;
+}
+
+.title--publication h3 {
+  color: #fff;
+  font-size: 32px;
+  padding-bottom: 10px;
+  width: 200px;
+  position: relative;
+}
+.wrapper-scroll:hover p {
+  display: block;
+}
+.title--publication p {
+  color: #fff;
+}
+
+.title--publication p {
+  display: none;
+}
+.wrapper-scroll {
+  position: relative;
+}
+.title--publication h3:after {
+  content: '';
+  width: 100px;
+  background-color: #335AB7;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 4px;
+}
+.publication-container {
+  background-image: url(../images/bg--bottom.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
