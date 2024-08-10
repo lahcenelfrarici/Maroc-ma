@@ -867,8 +867,8 @@ div#slider-element-maps .owl-dots .active {
   gap: 20px 0;
 }
 
-.actualites .row>div:first-child .card ,
-.actualites .row>div:first-child .card a{
+.actualites .row>div:first-child .card,
+.actualites .row>div:first-child .card a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1363,8 +1363,9 @@ div#slider-element-maps p {}
   color: #0F1B5C;
 }
 
-.bg-blue-gradient,.footer-top {
-  background-image: linear-gradient(200deg, #0F1B5C 60%,#335AB7 100%);
+.bg-blue-gradient,
+.footer-top {
+  background-image: linear-gradient(200deg, #0F1B5C 60%, #335AB7 100%);
 }
 
 .all-item--service {
@@ -2908,7 +2909,7 @@ div#slider-element-maps p {}
 .actualites .info-top-title h2,
 .bg-blue-normal .info-top-title h2,
 .actualites .info-top-title p,
-.bg-blue-normal  .info-top-title p{
+.bg-blue-normal .info-top-title p {
   color: #1C2E55;
 }
 
@@ -2986,13 +2987,15 @@ section:last-child {
   color: #111111;
   align-items: center;
 }
-.bg-investisseurs{
+
+.bg-investisseurs {
   background-image: url(../images/inv-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
+
 .wrapper--investisseurs {
   background-color: #0F1B5C;
   padding: 30px;
@@ -3032,6 +3035,7 @@ section:last-child {
 .btn--investisseurs a:hover {
   background-color: #335AB7;
 }
+
 .title--le-maroc h3 {
   font-size: 18px;
   color: #fff;
@@ -3057,7 +3061,8 @@ section:last-child {
   width: 32%;
 }
 
-.all-box-le-maroc > div:nth-child(4),.all-box-le-maroc > div:nth-child(5) {
+.all-box-le-maroc>div:nth-child(4),
+.all-box-le-maroc>div:nth-child(5) {
   width: 49%;
 }
 
@@ -3071,6 +3076,7 @@ section:last-child {
   border-radius: 10px;
   gap: 20px 0;
 }
+
 .item--le-maroc a {
   height: 100%;
   width: 100%;
@@ -3080,6 +3086,7 @@ section:last-child {
   justify-content: center;
   gap: 30px 0;
 }
+
 .item--le-maroc:hover {
   background-color: #335AB7;
 }
@@ -3097,9 +3104,10 @@ section:last-child {
 .carte-item .info-top-title .title--parent-h2 {
   padding: 0;
 }
+
 .wrapper-info-mohammed_vi {
   max-width: 90%;
-  background-image: linear-gradient(200deg, #0F1B5C 60%,#335AB7 100%);
+  background-image: linear-gradient(200deg, #0F1B5C 60%, #335AB7 100%);
   padding: 40px 40px 40px 22%;
   height: 533px;
   border-radius: 10px;
@@ -3121,6 +3129,7 @@ section:last-child {
   top: 0;
   left: 0;
 }
+
 .item--info-mohammed_vi h2 {
   width: 65%;
 }
@@ -3150,9 +3159,10 @@ section:last-child {
   margin: auto;
 }
 
-.date-right--mohammed_vi  span {
+.date-right--mohammed_vi span {
   text-align: right;
 }
+
 .img--mohammed_vi img {
   z-index: 22222;
   position: relative;
@@ -3168,11 +3178,13 @@ section:last-child {
   pointer-events: none;
   z-index: 0;
 }
+
 .date-right--mohammed_vi .btn--investisseurs {
   display: flex;
   justify-content: right;
   padding-top: 4%;
 }
+
 .title--publication {
   z-index: 9;
   position: absolute;
@@ -3194,9 +3206,11 @@ section:last-child {
   width: 200px;
   position: relative;
 }
+
 .wrapper-scroll:hover p {
   display: block;
 }
+
 .title--publication p {
   color: #fff;
 }
@@ -3204,9 +3218,11 @@ section:last-child {
 .title--publication p {
   display: none;
 }
+
 .wrapper-scroll {
   position: relative;
 }
+
 .title--publication h3:after {
   content: '';
   width: 100px;
@@ -3216,10 +3232,28 @@ section:last-child {
   display: block;
   height: 4px;
 }
+
 .publication-container {
   background-image: url(../images/bg--bottom.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.publication {
+  position: relative;
+}
+
+.publication:after {
+  background-image: url(../images/bg--bottom.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  content: '';
+  height: 100%;
+  bottom: 0;
+  display: block;
+  width: 100%;
 }

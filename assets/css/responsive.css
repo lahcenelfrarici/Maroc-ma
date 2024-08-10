@@ -134,6 +134,52 @@
 }
 
 @media (max-width: 767px) {
+    .top-header {
+        display: none;
+    }
+
+    .main-menu nav .container-fluid button {
+        background: #fff;
+    }
+
+    .tabs--item button {
+        width: 100%;
+        margin: 0;
+        font-size: 17px;
+    }
+
+    .main-menu nav .container-fluid {
+        padding: 0;
+    }
+
+    .tabs--item {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .footer-top .container>div {
+        margin-top: 25px;
+    }
+
+    .wrapper--investisseurs {
+        padding: 20px;
+    }
+
+    .btn--investisseurs {
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    .element---shwoing-service>div:last-child {
+
+        text-align: center;
+    }
+
+    .element---shwoing-service>div:last-child {
+        width: 100%;
+        text-align: center;
+    }
+
     .mohammed_vi .container>.row {
         padding-right: calc(var(--bs-gutter-x)* .5);
         padding-left: calc(var(--bs-gutter-x)* .5);
@@ -145,7 +191,7 @@
     }
 
     .bg-maps .container>.row {
-        padding: 15px;
+        padding: 15px 0;
         margin: 0 0px;
     }
 
