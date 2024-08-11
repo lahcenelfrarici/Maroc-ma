@@ -134,6 +134,9 @@
 }
 
 @media (max-width: 767px) {
+    .carte-items .accordion-header button {
+        font-size: 20px;
+    }
     .wrapper-accessibilty {
         right: auto;
         flex-direction: column;
