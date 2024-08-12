@@ -1,20 +1,41 @@
 @font-face {
-  font-family: "poppins regular";
-  src: url("../webfonts/poppins-regular.ttf");
+  font-family: "manrope bold";
+  src: url("../webfonts/manrope/manrope-bold.otf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "manrope regular";
-  src: url("../webfonts/manrope_regular.otf");
+  src: url("../webfonts/manrope/manrope-regular.otf");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "poppins bold";
-  src: url("../webfonts/poppins-Bold.ttf");
+  font-family: "montserrat black";
+  src: url("../webfonts/montserrat/Montserrat-Regular.ttf");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "montserrat Bold";
+  src: url("../webfonts/montserrat/Montserrat-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "nunito italic";
+  src: url("../webfonts/nunito/Nunito-Italic.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "nunito regular";
+  src: url("../webfonts/nunito/Nunito-Regular.ttf");
+  font-display: swap;
+}
+
+
+
 
 a:hover {
   text-decoration: none;
@@ -38,7 +59,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "poppins bold";
+  font-family: "montserrat Bold";
 }
 
 .title-wrapper h2 {
@@ -57,6 +78,7 @@ p {
   color: #111111;
   font-size: 16px;
   line-height: 25px;
+
   font-family: "manrope regular";
 }
 
@@ -72,6 +94,14 @@ img {
 /* .top-header .nav-item>a {
   border-right: 1px solid #fff;
 } */
+.btn--audio button span {
+  font-family: "manrope bold";
+}
+
+.paragraph-wrapper h1 {
+  font-family: "montserrat black";
+  font-size: 45px;
+}
 
 .top-header>ul {
   /* border-bottom: 1px solid #fff; */
@@ -1317,6 +1347,8 @@ div#bottom-footer a[target=_blank] {
 div#slider-element-maps .item h4 {
   font-size: 18px;
   font-weight: bold;
+  font-family: "manrope bold";
+  color: #0F1B5C;
 }
 
 div#slider-element-maps p {}
@@ -1383,6 +1415,7 @@ div#slider-element-maps p {}
   text-align: left;
   padding: 10px;
   border-radius: 10px;
+  font-family: "manrope bold";
 }
 
 .detail-item {
@@ -1401,23 +1434,7 @@ div#slider-element-maps p {}
   padding-left: 20px;
 }
 
-@font-face {
-  font-family: "poppins regular";
-  src: url("../webfonts/poppins-regular.ttf");
-  font-display: swap;
-}
 
-@font-face {
-  font-family: "manrope regular";
-  src: url("../webfonts/manrope_regular.otf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "poppins bold";
-  src: url("../webfonts/poppins-Bold.ttf");
-  font-display: swap;
-}
 
 a:hover {
   text-decoration: none;
@@ -1432,17 +1449,10 @@ select {
 
 a {
   text-decoration: none;
-  font-family: "poppins regular";
+  font-family: "manrope bold";
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "poppins bold";
-}
+
 
 .title-wrapper h2 {
   color: #0F1B5C;
@@ -2755,7 +2765,12 @@ div#slider-element-maps p {}
   font-weight: bold;
   border: 0;
   padding: 10px 0;
+  font-family: "manrope bold";
   border-radius: 6px;
+}
+
+.actualites .row>div:first-child .card .card-body p {
+  color: rgba(17, 17, 17, 0.7);
 }
 
 .tabs--item {
@@ -2901,6 +2916,7 @@ div#slider-element-maps p {}
 .info-top-title p {
   color: #fff;
   padding: 10px 0;
+  font-family: "nunito regular";
 }
 
 /* .info-top-title {
@@ -3039,6 +3055,7 @@ section:last-child {
 .title--le-maroc h3 {
   font-size: 18px;
   color: #fff;
+  font-family: "manrope bold";
 }
 
 .img--le-maroc {
@@ -3099,6 +3116,8 @@ section:last-child {
 
 .carte-item .info-top-title p {
   color: #0F1B5C;
+  font-family: "nunito regular";
+  font-weight: bold;
 }
 
 .carte-item .info-top-title .title--parent-h2 {
@@ -3147,6 +3166,7 @@ section:last-child {
 
 .item--info-mohammed_vi p {
   color: #fff;
+  font-family: "nunito italic";
 }
 
 .date-right--mohammed_vi {
@@ -3161,6 +3181,7 @@ section:last-child {
 
 .date-right--mohammed_vi span {
   text-align: right;
+  font-family: "nunito regular";
 }
 
 .img--mohammed_vi img {
@@ -3257,14 +3278,16 @@ section:last-child {
   display: block;
   width: 100%;
 }
+
 .wrapper-accessibilty {
   position: fixed;
   right: 20px;
   top: 50%;
   z-index: 9;
 }
+
 .wrapper-accessibilty {
-  
+
   position: fixed;
   right: 20px;
   top: 0;
@@ -3315,16 +3338,30 @@ section:last-child {
   box-shadow: initial;
   border: 0;
 }
+
 .list-social-sticky li a:hover {
   color: #fff;
 }
+
 button#vfrc-launcher {
   margin: 0;
 }
-/* .wrapper-accessibilty button svg {
-  height: 41px;
-  width: 41px;
-  border-radius: 30px;
-  border: 2px solid #ffff;
-  padding: 7px 4px;
-} */
+
+div#slider-element-maps p {
+  font-family: "manrope regular";
+}
+.service {
+  padding: 0;
+}
+
+.banner--service img {
+  width: 100%;
+  height: 85px;
+  object-fit: cover;
+}
+
+
+.service .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
