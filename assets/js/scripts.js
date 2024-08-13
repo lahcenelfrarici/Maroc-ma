@@ -2,7 +2,7 @@
   $(document).ready(function () {
 
     // 
-    $(".slider-element-maps").owlCarousel({
+    $(".maps .slider-element-maps").owlCarousel({
       loop: true,
       nav: false,
       items: 1,
@@ -26,6 +26,37 @@
         },
         1000: {
           items: 1,
+          dragEndSpeed: 0,
+        }
+      }
+    });
+    // 
+    $(".slider-actualites-internes").owlCarousel({
+      loop: true,
+      nav: false,
+      items: 3,
+      margin:10,
+      dots: true,
+      // autoWidth:true,
+      // mouseDrag: false, // Disable mouse drag
+      // touchDrag: false, // Disable touch drag
+      autoHeight:true,
+      // navText: [
+      //   "<i class='fa-solid fa-angle-left'></i>",
+      //   "<i class='fa-solid fa-angle-right'></i>"
+      // ],
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+
+        },
+        600: {
+          items: 1,
+          autoHeight:false,
+        },
+        1000: {
+          items: 3,
           dragEndSpeed: 0,
         }
       }

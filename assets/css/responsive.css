@@ -12,7 +12,10 @@
         left: 14%;
         width: 100%;
     }
-
+    #actualites-internes .slider-element-maps .owl-dots {
+        width: 100%;
+        left: 0;
+    }
     .top-header {
         width: 100%;
     }
@@ -48,6 +51,18 @@
 }
 
 @media (max-width: 991px) {
+    .wrapper--chambre-representants .container .row:last-child {
+        gap: 20px 0;
+    }
+    #actualites-internes .row>div:first-child .card a {
+        width: 100%;
+    }
+    #actualites-internes .row>div:first-child .card .wrapper-img {
+        height: auto;
+    }
+    .wrapper--decouvrir-egalement .container .row:last-child {
+        gap: 20px 0;
+    }
     .img----slider {
         height: auto;
         width: 100%;
@@ -115,7 +130,9 @@
     .element-sc.active {
         gap: 30px 0;
     }
-
+    .chambre-representants--img {
+        height: auto;
+    }
     .detail-item {
 
         padding-right: 0;
@@ -169,6 +186,17 @@
 }
 
 @media (max-width: 767px) {
+    .historique-des-chefs {
+        flex-direction: column;
+    }
+    body .historique-des-chefs >div {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        display: flex !important;
+        justify-content: center !important;
+        gap: 10px 0;
+    }
     .slider-element-maps .owl-dots {
         bottom: 0;
         right: auto;
