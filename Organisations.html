@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organisations</title>
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="./assets/css/all.min.css" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="./assets/css/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+  <header class="header-transparent">
+    <div class="container-fluid top-header">
+      <div class="btn--audio">
+        <div>
+          <button aria-label="Name" id="playPauseButton">
+            <img src="./assets/images/icon-maghirb.webp" alt="Icon">
+            <span>Hymne national</span>
+            <i class="fa-solid fa-circle-play" id="playPauseIcon"></i>
+          </button>
+        </div>
+      </div>
+
+
+
+      <audio id="audioPlayer" src="./assets/mp3/nachid_watani_Maroc.mp3" hidden></audio>
+      <!-- <div class="btn--audio">
+        <div>
+          <button>
+            <img src="./assets/images/icon-maghirb.webp">
+            <span>Hymne national</span>
+            <i class="fa-solid fa-circle-play"></i>
+          </button>
+        </div>
+      </div> -->
+      <ul class="nav justify-content-end">
+        <!-- Dropdown switch lang -->
+        <!-- Social media -->
+        <li class="nav-item">
+          <a class="nav-link" href="#" aria-label="maroc"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" aria-label="maroc"><i class="fa-brands fa-x-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" aria-label="maroc"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" aria-label="maroc"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+      </ul>
+      <!-- multilangue -->
+      <div class="multilingue">
+        <div class="dropdown">
+          <button aria-label="Name" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa fa-sharp fa-light fa-globe"></i>
+            Français
+
+          </button>
+          <!-- <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English </a></li>
+            <li><a class="dropdown-item" href="#">Français</a></li>
+            <li><a class="dropdown-item" href="#">Arbic</a></li>
+          </ul> -->
+        </div>
+        </li>
+      </div>
+    </div>
+    <!-- Main menu -->
+    <div class="main-menu" data-sticky-class="is-sticky">
+      <div class="container-fluid">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+              <img src="./assets/images/Logo-maroc-White.svg" alt="Logo">
+              <img src="./assets/images/Logo-maroc-Blue.svg" alt="Logo">
+            </a>
+            <!-- Toggler for mobile view -->
+            <button aria-label="Name" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto gap-4">
+                <!-- Menu items -->
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Discours &
+                    messages Royaux</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Le Maroc</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Histoire
+                    du Maroc</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Culture
+                    du Maroc</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Stratégies &
+                    politiques publiques </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services
+                    numériques</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Actualités</a>
+                </li>
+              </ul>
+              <!-- Search form -->
+              <button aria-label="Name" type="button" class="btn search-btn" data-bs-toggle="modal"
+                data-bs-target="#searchModal">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+
+            </div>
+          </div>
+        </nav>
+
+      </div>
+      <div class="search--bar">
+        <div class="search--bar-inner">
+          <form action="" method="get">
+            <div class="btn-search-submit">
+              <div class="input--text">
+                <input type="text" class="form-text" />
+              </div>
+
+              <div class="form-actions js-form-wrapper form-wrapper d-none">
+                <input type="submit" class="button js-form-submit form-submit" />
+              </div>
+            </div>
+          </form>
+
+          <button aria-label="Name" type="button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END.Header -->
+
+  <main id="main-content">
+
+    <!--  -->
+    <section class="banner--breadcrumbs  odd-re-bg" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <!-- breadcrumb -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Accueil </a></li>
+              <li class="breadcrumb-item"><a href="#">Le Maroc</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><span>Organisations</span></li>
+            </ol>
+          </nav>
+          <!-- Title Page -->
+          <div class="title--page text-center">
+            <h1>Organisations</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="organisations  odd-re-bg" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+
+        <div class="row">
+          <div class="all-item--service">
+            <div class="tabs--item">
+              <button>
+                Partis politiques
+              </button>
+              <button>
+                Syndicats
+              </button>
+            </div>
+            <div class="element--detail row">
+              <!-- element 1  -->
+              <div class="element-sc">
+                <div class="row">
+                  <div class="info-top-title">
+                    <div class="title--parent-h2">
+                      <h2>Partis politiques</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                  </div>
+                </div>
+<!--  -->
+              </div>
+              <!-- element 2  -->
+              <div class="element-sc">
+                <div class="row">
+                  <div class="info-top-title">
+                    <div class="title--parent-h2">
+                      <h2>Syndicats</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper--decouvrir-egalement">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="info-top-title bg-blue-title">
+              <div class="title--parent-h2">
+                <h2>Découvrir également</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <a href="#">
+              <div class="items--egalements">
+                <div class="column--img">
+                  <img src="./assets/images/ar_1.png">
+                </div>
+                <div class="column--info">
+                  <h3>Constitution</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="#">
+              <div class="items--egalements">
+                <div class="column--img">
+                  <img src="./assets/images/ar_2.png">
+                </div>
+                <div class="column--info">
+                  <h3>Constitution</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="#">
+              <div class="items--egalements">
+                <div class="column--img">
+                  <img src="./assets/images/ar_3.png">
+                </div>
+                <div class="column--info">
+                  <h3>Constitution</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="actualites  bg-blue-normal odd-re-bg" data-aos="fade-up" data-aos-duration="1000"
+      id="actualites-internes">
+      <div class="container">
+        <div class="info-top-title">
+          <div class="title--parent-h2">
+            <h2>Actualités</h2>
+          </div>
+        </div>
+        <div class="row slider-element-maps">
+          <div class="col-lg-12 owl-carousel slider-actualites-internes">
+            <div class="col-md-item">
+              <div class="card">
+                <a href="#">
+                  <div class="wrapper-img">
+                    <img src="./assets/images/ar1.webp" class="card-img-top" alt="maroc">
+                  </div>
+                  <div class="card-body">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit...</h3>
+
+                    <div class="info--bottom-date-more">
+                      <div class="date--actualites">
+                        <span><i class="fas fa-calendar-alt"></i>25/06/2024</span>
+                      </div>
+                      <div class="more--link">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-item">
+              <div class="card">
+                <a href="#">
+                  <div class="wrapper-img">
+                    <img src="./assets/images/ar2.webp" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit...</h3>
+
+                    <div class="info--bottom-date-more">
+                      <div class="date--actualites">
+                        <span><i class="fas fa-calendar-alt"></i>25/06/2024</span>
+                      </div>
+                      <div class="more--link">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+            <div class="col-md-item">
+              <div class="card">
+                <a href="#">
+                  <div class="wrapper-img">
+                    <img src="./assets/images/ar3.webp" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit...</h3>
+
+                    <div class="info--bottom-date-more">
+                      <div class="date--actualites">
+                        <span><i class="fas fa-calendar-alt"></i>25/06/2024</span>
+                      </div>
+                      <div class="more--link">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+            <div class="col-md-item">
+              <div class="card">
+                <a href="#">
+                  <div class="wrapper-img">
+                    <img src="./assets/images/ar4.webp" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit...</h3>
+
+                    <div class="info--bottom-date-more">
+                      <div class="date--actualites">
+                        <span><i class="fas fa-calendar-alt"></i>25/06/2024</span>
+                      </div>
+                      <div class="more--link">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+            <div class="col-md-item">
+              <div class="card">
+                <a href="#">
+                  <div class="wrapper-img">
+                    <img src="./assets/images/ar5.webp" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit...</h3>
+
+                    <div class="info--bottom-date-more">
+                      <div class="date--actualites">
+                        <span><i class="fas fa-calendar-alt"></i>25/06/2024</span>
+                      </div>
+                      <div class="more--link">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-aos="fade-up" data-aos-duration="1000">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row" id="top-footer">
+          <div class="col-lg-4">
+            <div class="logo-left-footer">
+              <a href="#">
+                <img src="./assets/images/logo_footer.webp" alt="maroc">
+              </a>
+
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="top-footer-center-application">
+              <h4>Téléchargez l'application</h4>
+              <div class="app-telecharger">
+                <a href="#">
+                  <img src="./assets/images/iphon.webp" alt="maroc">
+                </a>
+                <a href="#">
+                  <img src="./assets/images/android.webp" alt="maroc">
+                </a>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+
+            <div class="logo-right-footer">
+              <a href="#">
+                <img src="./assets/images/logo-right-footer.webp" alt="maroc">
+              </a>
+
+            </div>
+          </div>
+        </div>
+        <div class="row" id="center-footer">
+          <ul class="social-icon">
+            <!-- Social media -->
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="#" aria-label="maroc">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="#" aria-label="maroc">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="#" aria-label="maroc">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="#" aria-label="maroc">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="row btn--all" id="bottom-footer">
+          <a href="#">
+            Investisseurs
+          </a>
+          <a href="#">
+            Touristes
+          </a>
+          <a href="#" target="_blank">
+            Niya Maghribia
+          </a>
+          <a href="#" target="_blank">
+            Sahara.ma
+          </a>
+        </div>
+        <div class="row" id="bottom-footer-copyright">
+          <!-- Menu -->
+          <ul>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+          <div class="sc-copyright">
+            <p> Ministère de la Jeunesse, de la Culture et de la Communication ©2024 - Tous droits réservés</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="./assets/js/owl.carousel.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/highmaps.js"></script>
+  <script src="./assets/js/jquery.mapRegion.js"></script>
+
+  <!-- Your custom JS scripts -->
+  <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>
