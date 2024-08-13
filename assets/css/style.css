@@ -140,11 +140,14 @@ img {
 }
 
 .main-menu .nav-item a {
-  color: #fff;
   padding: 10px 0 !important;
   display: inline;
   font-weight: bold;
   position: relative;
+}
+
+.main-menu.is-sticky .nav-item a {
+  color: #0f1b5c !important;
 }
 
 .main-menu .nav-item a.active {
@@ -505,7 +508,7 @@ li {
 }
 
 .main-menu.is-sticky {
-  background-color: #0F1B5C;
+  background-color: #fff;
   box-shadow: 0 5px 12px rgba(0, 0, 0, .12);
 }
 
@@ -824,32 +827,32 @@ ul.b-breadcrumb-list {
 }
 
 
-div#slider-element-maps .item {
+div.slider-element-maps .item {
   position: relative;
 }
 
-div#slider-element-maps {
+div.slider-element-maps {
   position: relative;
 }
 
-#slider-element-maps .owl-dots {
+.slider-element-maps .owl-dots {
   display: flex;
   gap: 9px;
   margin: auto;
 }
 
-div#slider-element-maps .owl-dot {
+div.slider-element-maps .owl-dot {
   background: #D2D2D2;
   width: 23px;
   height: 8px;
   border-radius: 6px;
 }
 
-div#slider-element-maps .owl-dot .active {
+div.slider-element-maps .owl-dot .active {
   background: #335AB7;
 }
 
-div#slider-element-maps .owl-dots .active {
+div.slider-element-maps .owl-dots .active {
   background-color: #335AB7;
 }
 
@@ -1344,14 +1347,14 @@ div#bottom-footer a[target=_blank] {
   transform: rotate(180deg);
 }
 
-div#slider-element-maps .item h4 {
+div.slider-element-maps .item h4 {
   font-size: 18px;
   font-weight: bold;
   font-family: "manrope bold";
   color: #0F1B5C;
 }
 
-div#slider-element-maps p {}
+div.slider-element-maps p {}
 
 .carte-items .accordion-item img {
   width: 100%;
@@ -1520,6 +1523,14 @@ img {
 
 .top-header i {
   color: #fff;
+}
+
+.main-menu a.navbar-brand img:nth-child(2) {
+  display: none;
+}
+
+.main-menu.is-sticky a.navbar-brand img:nth-child(2) {
+  display: block;
 }
 
 .main-menu .nav-item a {
@@ -1887,7 +1898,7 @@ li {
 }
 
 .main-menu.is-sticky {
-  background-color: #0F1B5C;
+  background-color: #fff;
   box-shadow: 0 5px 12px rgba(0, 0, 0, .12);
 }
 
@@ -2206,32 +2217,42 @@ ul.b-breadcrumb-list {
 }
 
 
-div#slider-element-maps .item {
+div.slider-element-maps .item {
+  /* position: relative; */
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+}
+
+div.slider-element-maps {
   position: relative;
 }
 
-div#slider-element-maps {
-  position: relative;
-}
-
-#slider-element-maps .owl-dots {
+.slider-element-maps .owl-dots {
   display: flex;
   gap: 9px;
   margin: auto;
+  justify-content: center;
+  position: absolute;
+  width: 81%;
+  bottom: 13px;
+  right: 0;
 }
 
-div#slider-element-maps .owl-dot {
+div.slider-element-maps .owl-dot {
   background: #D2D2D2;
   width: 23px;
   height: 8px;
   border-radius: 6px;
 }
 
-div#slider-element-maps .owl-dot .active {
+div.slider-element-maps .owl-dot .active {
   background: #335AB7;
 }
 
-div#slider-element-maps .owl-dots .active {
+div.slider-element-maps .owl-dots .active {
   background-color: #335AB7;
 }
 
@@ -2573,6 +2594,7 @@ div#bottom-footer a[target=_blank]:before {
   right: 19px;
   top: 20px;
   content: '\f08e';
+
 }
 
 div#bottom-footer a[target=_blank] {
@@ -2733,12 +2755,14 @@ div#bottom-footer a[target=_blank] {
   transform: rotate(180deg);
 }
 
-div#slider-element-maps .item h4 {
+div.slider-element-maps .item h4 {
   font-size: 18px;
   font-weight: bold;
 }
 
-div#slider-element-maps p {}
+div.slider-element-maps p {
+  margin-bottom: 0;
+}
 
 .carte-items .accordion-item img {
   width: 100%;
@@ -3174,6 +3198,10 @@ section:last-child {
   flex-direction: column;
 }
 
+.main-menu.is-sticky .search-btn>i {
+  color: #0f1b5c;
+}
+
 .date-right--mohammed_vi img {
   text-align: center;
   margin: auto;
@@ -3347,9 +3375,10 @@ button#vfrc-launcher {
   margin: 0;
 }
 
-div#slider-element-maps p {
+div.slider-element-maps p {
   font-family: "manrope regular";
 }
+
 .service {
   padding: 0;
 }
@@ -3364,4 +3393,204 @@ div#slider-element-maps p {
 .service .container {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.main-menu.is-sticky a.navbar-brand img:nth-child(1) {
+  display: none;
+}
+
+.slider-element-maps .owl-height {
+  transition: none;
+}
+
+.img----slider {
+  height: 173px;
+  width: 50%;
+}
+
+.img----slider img {
+  width: 100%;
+  height: 100%;
+}
+
+.info----slider {
+  width: 50%;
+  position: relative;
+}
+
+
+.banner--breadcrumbs .active span {
+  font-weight: bold;
+  color: #0F1B5C;
+  font-family: "manrope bold";
+}
+
+.banner--breadcrumbs a {
+  font-family: "manrope regular";
+  color: #0F1B5C;
+}
+
+
+
+.banner--breadcrumbs:before {
+  font-weight: 300;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  font-weight: bold;
+}
+
+.banner--breadcrumbs .breadcrumb {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+ol.breadcrumb li:first-child:after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 19px;
+  top: 0;
+  left: 0;
+  content: '\f80b';
+  color: #0F1B5C;
+  right: auto;
+}
+
+
+.breadcrumb {
+  padding-left: 30px;
+}
+
+ol.breadcrumb {
+  position: relative;
+}
+
+.banner--breadcrumbs nav {
+  padding: 0;
+}
+
+.title--page.text-center h1 {
+  color: #0F1B5C;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.title--page {
+  padding: 20px;
+}
+
+.bg-blue-title h2 {
+  color: #0F1B5C;
+}
+
+/* .bg-blue-title {
+  margin-left: 20px;
+} */
+
+section.wrapper--all-items a:after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: -38px;
+  bottom: 0;
+  content: '\f08e';
+}
+
+section.wrapper--all-items a {
+  position: relative;
+}
+
+.sc-item h3 {
+  font-size: 20px;
+  color: #0F1B5C;
+  padding: 20px 0 10px 0;
+}
+
+.sc-item a {
+  color: #0F1B5C;
+  font-size: 16px;
+}
+
+.sc-item img {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.sc-item-img {
+  height: 273px;
+  margin-bottom: 10px;
+}
+
+section.wrapper--all-items .container .row:last-child {
+  gap: 30px 0;
+}
+
+.historique-des-chefs {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.historique-des-chefs {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.historique-des-chefs>div {
+  width: 40%;
+}
+
+
+.historique-des-chefs>div:first-child h2 {
+  width: 85%;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.historique-des-chefs>div:last-child {
+  display: flex;
+  justify-content: right;
+}
+
+.historique-des-chefs>div:last-child .btn--sc {
+  margin: 0;
+  width: 269px;
+  padding: 10px 40px;
+  text-align: center;
+}
+section.wrapper--decouvrir-egalement {
+  background-color: #fff;
+}
+
+.column--info h3 {
+  font-size: 20px;
+  color: #0F1B5C;
+  margin-bottom: 0;
+}
+.column--info {
+  padding: 30px;
+}
+section.wrapper--decouvrir-egalement .row:last-child .items--egalements {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #0F1B5C;
+}
+
+.column--img img {
+  width: 100%;
+  height: 100%;
+}
+.items--egalements:hover {
+  background-color: #335AB7;
+}
+
+.items--egalements:hover h3 {
+  color: #fff;
 }

@@ -1,8 +1,16 @@
 @media (max-width: 1119px) {
 
+
     html,
     body {
         overflow-x: hidden;
+    }
+
+    .slider-element-maps .owl-dots {
+        bottom: 0;
+        right: auto;
+        left: 14%;
+        width: 100%;
     }
 
     .top-header {
@@ -40,6 +48,33 @@
 }
 
 @media (max-width: 991px) {
+    .img----slider {
+        height: auto;
+        width: 100%;
+    }
+
+    .info----slider {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    div.slider-element-maps .item {
+        justify-content: left;
+        gap: 0 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .slider-element-maps .owl-dots {
+        bottom: 0;
+        right: auto;
+        left: 0;
+        width: auto;
+        position: relative;
+        justify-content: left;
+        padding-top: 11px;
+    }
+
     .sc-copyright {
         padding-left: 0;
     }
@@ -134,9 +169,20 @@
 }
 
 @media (max-width: 767px) {
+    .slider-element-maps .owl-dots {
+        bottom: 0;
+        right: auto;
+        left: 0;
+        width: auto;
+        position: relative;
+        justify-content: left;
+        padding-top: 11px;
+    }
+
     .carte-items .accordion-header button {
         font-size: 20px;
     }
+
     .wrapper-accessibilty {
         right: auto;
         flex-direction: column;
@@ -148,32 +194,39 @@
         bottom: 20px;
         align-items: end;
     }
+
     .list-social-sticky ul {
         flex-direction: row;
         margin-bottom: 0;
         gap: 0 10px;
     }
+
     .list-social-sticky li {
         height: 40px;
         width: 40px;
     }
+
     .wrapper-accessibilty button {
         height: 40px;
         width: 40px;
         margin: 0 10px 0 10px;
     }
+
     .title--publication p {
         display: block;
     }
+
     .title--publication h3 {
         font-size: 20px;
         width: 100%;
 
     }
+
     .title--publication {
         bottom: 0;
         padding: 0 15px;
     }
+
     .top-header {
         display: none;
     }

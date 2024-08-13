@@ -2,13 +2,14 @@
   $(document).ready(function () {
 
     // 
-    $("#slider-element-maps").owlCarousel({
+    $(".slider-element-maps").owlCarousel({
       loop: true,
       nav: false,
       items: 1,
       dots: true,
       mouseDrag: false, // Disable mouse drag
       touchDrag: false, // Disable touch drag
+      autoHeight:true,
       // navText: [
       //   "<i class='fa-solid fa-angle-left'></i>",
       //   "<i class='fa-solid fa-angle-right'></i>"
@@ -21,6 +22,7 @@
         },
         600: {
           items: 1,
+          autoHeight:false,
         },
         1000: {
           items: 1,

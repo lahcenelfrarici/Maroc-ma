@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAROC</title>
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="./assets/css/all.min.css" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="./assets/css/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+  <header class="header-transparent">
+    <div class="container-fluid top-header">
+      <div class="btn--audio">
+        <div>
+          <button aria-label="Name" id="playPauseButton">
+            <img src="./assets/images/icon-maghirb.webp" alt="Icon">
+            <span>Hymne national</span>
+            <i class="fa-solid fa-circle-play" id="playPauseIcon"></i>
+          </button>
+        </div>
+      </div>
+
+
+
+      <audio id="audioPlayer" src="./assets/mp3/nachid_watani_Maroc.mp3" hidden></audio>
+      <!-- <div class="btn--audio">
+        <div>
+          <button>
+            <img src="./assets/images/icon-maghirb.webp">
+            <span>Hymne national</span>
+            <i class="fa-solid fa-circle-play"></i>
+          </button>
+        </div>
+      </div> -->
+      <ul class="nav justify-content-end">
+        <!-- Dropdown switch lang -->
+        <!-- Social media -->
+        <li class="nav-item">
+          <a class="nav-link" href="#" aria-label="maroc"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" aria-label="maroc"><i class="fa-brands fa-x-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" aria-label="maroc"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" aria-label="maroc"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+      </ul>
+      <!-- multilangue -->
+      <div class="multilingue">
+        <div class="dropdown">
+          <button aria-label="Name" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa fa-sharp fa-light fa-globe"></i>
+            Français
+
+          </button>
+          <!-- <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English </a></li>
+            <li><a class="dropdown-item" href="#">Français</a></li>
+            <li><a class="dropdown-item" href="#">Arbic</a></li>
+          </ul> -->
+        </div>
+        </li>
+      </div>
+    </div>
+    <!-- Main menu -->
+    <div class="main-menu" data-sticky-class="is-sticky">
+      <div class="container-fluid">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+              <img src="./assets/images/Logo-maroc-White.svg" alt="Logo">
+              <img src="./assets/images/Logo-maroc-Blue.svg" alt="Logo">
+            </a>
+            <!-- Toggler for mobile view -->
+            <button aria-label="Name" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto gap-4">
+                <!-- Menu items -->
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Discours &
+                    messages Royaux</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Le Maroc</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Histoire
+                    du Maroc</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Culture
+                    du Maroc</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Stratégies &
+                    politiques publiques </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services
+                    numériques</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Actualités</a>
+                </li>
+              </ul>
+              <!-- Search form -->
+              <button aria-label="Name" type="button" class="btn search-btn" data-bs-toggle="modal"
+                data-bs-target="#searchModal">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+
+            </div>
+          </div>
+        </nav>
+
+      </div>
+      <div class="search--bar">
+        <div class="search--bar-inner">
+          <form action="" method="get">
+            <div class="btn-search-submit">
+              <div class="input--text">
+                <input type="text" class="form-text" />
+              </div>
+
+              <div class="form-actions js-form-wrapper form-wrapper d-none">
+                <input type="submit" class="button js-form-submit form-submit" />
+              </div>
+            </div>
+          </form>
+
+          <button aria-label="Name" type="button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END.Header -->
+
+  <main id="main-content">
+    <section class="maps bg-maps odd-re-bg" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="carte-items">
+
+              <div id="94" class="carte-item">
+
+                <!-- Accordion Example -->
+                <div class="accordion" id="accordionWrapper_94">
+                  <div class="info-top-title">
+                    <div class="title--parent-h2">
+                      <h2>Rabat, la capitale des lumières</h2>
+                    </div>
+                    <p>Le symbole de la culture marocaine
+                    </p>
+                  </div>
+                  <!-- Accordion #1 -->
+                  <div class="accordion-item mb-4 shadow-sm">
+                    <!-- Accordion Header -->
+                    <h2 class="accordion-header" id="headingOne">
+                      <button aria-label="Name" class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse_1_94" aria-expanded="true" aria-controls="collapse_1_94">
+                        Culture
+                        <i class="fa-solid fa-angle-down"></i>
+
+                      </button>
+                    </h2>
+
+                    <!-- Accordion Body -->
+                    <div id="collapse_1_94" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                      data-bs-parent="#accordionWrapper_94">
+                      <div class="accordion-body px-md-4 pt-0">
+
+                        <div class="row">
+
+                          <div class="col-lg-12">
+                            <div class="owl-carousel slider-element-maps">
+                              <div class="item">
+                                <div class="img----slider">
+                                  <img src="./assets/images/rabat.webp" alt="maroc">
+                                </div>
+                                <div class="info----slider">
+                                  <h4>Mosquée Hassan</h4>
+                                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                </div>
+                              </div>
+                              <!--  -->
+                              <div class="item">
+                                <div class="img----slider">
+                                  <img src="./assets/images/rabat.webp" alt="maroc">
+                                </div>
+                                <div class="info----slider">
+                                  <h4>Mosquée Hassan 2</h4>
+                                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                </div>
+                              </div>
+                              <!--  -->
+                              <div class="item">
+                                <div class="img----slider">
+                                  <img src="./assets/images/rabat.webp" alt="maroc">
+                                </div>
+                                <div class="info----slider">
+                                  <h4>Mosquée Hassan3</h4>
+                                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Accordion #2 -->
+                  <div class="accordion-item mb-4 shadow-sm">
+                    <!-- Accordion Header -->
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button aria-label="Name" class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse_2_94" aria-expanded="false"
+                        aria-controls="collapse_2_94">
+                        Histoire
+                        <i class="fa-solid fa-angle-down"></i>
+
+                      </button>
+                    </h2>
+
+                    <!-- Accordion Body -->
+                    <div id="collapse_2_94" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionWrapper_94">
+                      <div class="accordion-body px-md-4 pt-0">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="owl-carousel slider-element-maps">
+                              <div class="item">
+                                <div class="img----slider">
+                                  <img src="./assets/images/rabat.webp" alt="maroc">
+                                </div>
+                                <div class="info----slider">
+                                  <h4>Mosquée Hassan</h4>
+                                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                </div>
+                              </div>
+                              <!--  -->
+                              <div class="item">
+                                <div class="img----slider">
+                                  <img src="./assets/images/rabat.webp" alt="maroc">
+                                </div>
+                                <div class="info----slider">
+                                  <h4>Mosquée Hassan 2</h4>
+                                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                </div>
+                              </div>
+                              <!--  -->
+                              <div class="item">
+                                <div class="img----slider">
+                                  <img src="./assets/images/rabat.webp" alt="maroc">
+                                </div>
+                                <div class="info----slider">
+                                  <h4>Mosquée Hassan3</h4>
+                                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- END Accordion Example -->
+              </div>
+              <!--  -->
+              <div id="95" class="carte-item">
+                <!-- Accordion Example -->
+                <div class="accordion" id="accordionWrapper_95">
+                  <!-- Accordion #1 -->
+                  <div class="accordion-item mb-4 shadow-sm">
+                    <!-- Accordion Header -->
+                    <h2 class="accordion-header" id="headingOne">
+                      <button aria-label="Name" class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse_1_95" aria-expanded="true" aria-controls="collapse_1_95">
+                        Collapsible Group Item #1
+                        <i class="fa-solid fa-angle-down"></i>
+
+                      </button>
+                    </h2>
+
+                    <!-- Accordion Body -->
+                    <div id="collapse_1_95" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                      data-bs-parent="#accordionWrapper_95">
+                      <div class="accordion-body px-md-4 pt-0">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptates recusandae fugiat
+                          amet veniam quidem deserunt odit odio iusto ipsum natus, consequuntur eius ducimus quibusdam
+                          iure autem aut molestias numquam minus. Nemo dolore modi aliquam eius repudiandae fugiat!
+                          Atque earum sunt voluptatem ex nihil ullam, recusandae minus architecto harum odio provident.
+                          Delectus inventore voluptas alias voluptates id corrupti vitae exercitationem tempora
+                          repudiandae magni aliquid, ducimus rem dolorum laboriosam qui deserunt quasi reiciendis
+                          aliquam nobis? Rem tempore saepe eum quo. Sunt.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Accordion #2 -->
+                  <div class="accordion-item mb-4 shadow-sm">
+                    <!-- Accordion Header -->
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button aria-label="Name" class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse_2_95" aria-expanded="false"
+                        aria-controls="collapse_2_95">
+                        Collapsible Group Item #2
+                        <i class="fa-solid fa-angle-down"></i>
+
+                      </button>
+                    </h2>
+
+                    <!-- Accordion Body -->
+                    <div id="collapse_2_95" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionWrapper_95">
+                      <div class="accordion-body px-md-4 pt-0">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptates recusandae fugiat
+                          amet veniam quidem deserunt odit odio iusto ipsum natus, consequuntur eius ducimus quibusdam
+                          iure autem aut molestias numquam minus. Nemo dolore modi aliquam eius repudiandae fugiat!
+                          Atque earum sunt voluptatem ex nihil ullam, recusandae minus architecto harum odio provident.
+                          Delectus inventore voluptas alias voluptates id corrupti vitae exercitationem tempora
+                          repudiandae magni aliquid, ducimus rem dolorum laboriosam qui deserunt quasi reiciendis
+                          aliquam nobis? Rem tempore saepe eum quo. Sunt.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Accordion #3 -->
+                  <div class="accordion-item mb-4 shadow-sm">
+                    <!-- Accordion Header -->
+                    <h2 class="accordion-header" id="headingThree">
+                      <button aria-label="Name" class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse_3_95" aria-expanded="false"
+                        aria-controls="collapse_3_95">
+                        Collapsible Group Item #3
+                        <i class="fa-solid fa-angle-down"></i>
+
+                      </button>
+                    </h2>
+
+                    <!-- Accordion Body -->
+                    <div id="collapse_3_95" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                      data-bs-parent="#accordionWrapper_95">
+                      <div class="accordion-body px-md-4 pt-0">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit suscipit quis quas!
+                          Libero aliquid tempora totam molestias, ipsa hic doloribus impedit excepturi. Magnam eaque
+                          illum assumenda autem maiores, iure quas. Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Ea, fugiat temporibus totam dicta tenetur odit debitis ut officia possimus nesciunt hic
+                          reiciendis esse quo, voluptatum numquam nostrum omnis sed eum!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut officia dolore est, laborum
+                          assumenda repellendus ducimus saepe dolor nesciunt amet facilis at earum soluta delectus rem
+                          mollitia labore, temporibus ipsa!</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Accordion #4 -->
+                  <div class="accordion-item mb-4 shadow-sm">
+                    <!-- Accordion Header -->
+                    <h2 class="accordion-header" id="headingFour">
+                      <button aria-label="Name" class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse_4_95" aria-expanded="false"
+                        aria-controls="collapse_4_95">
+                        Collapsible Group Item #4
+                        <i class="fa-solid fa-angle-down"></i>
+
+                      </button>
+                    </h2>
+
+                    <!-- Accordion Body -->
+                    <div id="collapse_4_95" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                      data-bs-parent="#accordionWrapper_95">
+                      <div class="accordion-body px-md-4 pt-0">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit suscipit quis quas!
+                          Libero aliquid tempora totam molestias, ipsa hic doloribus impedit excepturi. Magnam eaque
+                          illum assumenda autem maiores, iure quas. Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Ea, fugiat temporibus totam dicta tenetur odit debitis ut officia possimus nesciunt hic
+                          reiciendis esse quo, voluptatum numquam nostrum omnis sed eum!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END Accordion Example -->
+              </div>
+
+
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div id="carteContainer"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="banner--breadcrumbs  odd-re-bg" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <!-- breadcrumb -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Accueil </a></li>
+              <li class="breadcrumb-item"><a href="#">Le Maroc</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><span>Gouvernement</span></li>
+            </ol>
+          </nav>
+          <!-- Title Page -->
+          <div class="title--page text-center">
+            <h1>Gouvernement</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper--info--paragraphs">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="info-top-title bg-blue-title">
+              <div class="title--parent-h2">
+                <h2>Attribution du gouvernement</h2>
+              </div>
+            </div>
+            <div class="info--paragraphs">
+              <p>
+                Le Roi nomme le chef du gouvernement au sein du parti politique arrivé en tête des élections des membres
+                de la chambre des représentants et au vu de leurs résultats.
+              </p>
+              <p>
+                Sur proposition du Chef du gouvernement, le Roi nomme les membres du gouvernement.
+              </p>
+              <p>
+                Le Roi peut, à son initiative, et après consultation du Chef du gouvernement mettre fin aux fonctions
+                d’un
+                ou de plusieurs membres du gouvernement.
+              </p>
+              <p>
+                Le Chef du gouvernement peut demander au Roi de mettre fin aux fonctions d’un ou de plusieurs membres du
+                gouvernement.
+              </p>
+              <p>
+                Le Chef du gouvernement peut demander au Roi de mettre fin aux fonctions d’un ou de plusieurs membres du
+                gouvernement du fait de leur démission individuelle ou collective.
+              </p>
+              <p>
+                A la suite de la démission du Chef du gouvernement, le Roi met fin aux fonctions de l’ensemble du
+                gouvernement. Le gouvernement dont il a été mis fin aux fonctions expédie les affaires courantes jusqu’à
+                la constitution d’un nouveau gouvernement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper--all-items">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="info-top-title bg-blue-title">
+              <div class="title--parent-h2">
+                <h2>Composition du Gouvernement</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 sc-item">
+            <div class="sc-item-img">
+              <img src="./assets/images/personne1.png" alt="Image 1">
+            </div>
+            <h3>M. Aziz AKHANNOUCH</h3>
+            <a href="#">Chef du gouvernement</a>
+          </div>
+          <div class="col-md-3 sc-item">
+            <div class="sc-item-img">
+              <img src="./assets/images/personne1.png" alt="Image 1">
+            </div>
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            <a href="#">Chef du gouvernement</a>
+          </div>
+          <div class="col-md-3 sc-item">
+            <div class="sc-item-img">
+              <img src="./assets/images/personne1.png" alt="Image 1">
+            </div>
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            <a href="#">Chef du gouvernement</a>
+          </div>
+          <div class="col-md-3 sc-item">
+            <div class="sc-item-img">
+              <img src="./assets/images/personne1.png" alt="Image 1">
+            </div>
+            <h3>Mme Nadia FETTAH</h3>
+            <a href="#">Ministre des Affaires étrangères, de la coopération africaine et des Marocains résidant à
+              l’étranger</a>
+          </div>
+          <div class="col-md-3 sc-item">
+            <div class="sc-item-img">
+              <img src="./assets/images/personne1.png" alt="Image 1">
+            </div>
+            <h3>Ministre de l’Economie et des Finances</h3>
+            <a href="#">Chef du gouvernement</a>
+          </div>
+          <div class="col-md-3 sc-item">
+            <div class="sc-item-img">
+              <img src="./assets/images/personne1.png" alt="Image 1">
+            </div>
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            <a href="#">Chef du gouvernement</a>
+          </div>
+          <div class="col-md-3 sc-item">
+            <div class="sc-item-img">
+              <img src="./assets/images/personne1.png" alt="Image 1">
+            </div>
+            <h3>M. Aziz AKHANNOUCH</h3>
+            <a href="#">Chef du gouvernement</a>
+          </div>
+          <div class="col-md-3 sc-item">
+            <div class="sc-item-img">
+              <img src="./assets/images/personne1.png" alt="Image 1">
+            </div>
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            <a href="#">Chef du gouvernement</a>
+          </div>
+          <div class="col-md-3 sc-item">
+            <div class="sc-item-img">
+              <img src="./assets/images/personne1.png" alt="Image 1">
+            </div>
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            <a href="#">Chef du gouvernement</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper--historique-des-chefs">
+      <div class="container">
+        <div class="row">
+          <div class="historique-des-chefs">
+            <div class="item--historique-des-chefs">
+              <H2>Historique des chefs du
+                gouvernement</H2>
+            </div>
+            <div class="item--historique-des-chefs">
+              <div class="btn--sc">
+                <a href="#">Découvrir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper--decouvrir-egalement">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="info-top-title bg-blue-title">
+              <div class="title--parent-h2">
+                <h2>Découvrir également</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <a href="#">
+              <div class="items--egalements">
+                <div class="column--img">
+                  <img src="./assets/images/egalment1.png">
+                </div>
+                <div class="column--info">
+                  <h3>Constitution</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+            <div class="col-lg-4">
+              <a href="#">
+                <div class="items--egalements">
+                  <div class="column--img">
+                    <img src="./assets/images/egalment1.png">
+                  </div>
+                  <div class="column--info">
+                    <h3>Constitution</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4">
+              <a href="#">
+                <div class="items--egalements">
+                  <div class="column--img">
+                    <img src="./assets/images/egalment1.png">
+                  </div>
+                  <div class="column--info">
+                    <h3>Constitution</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="mohammed_vi  bg-blue-normal odd-re-bg" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <div class="items--mohammed_vi">
+            <div class="img--mohammed_vi">
+              <img src="./assets/images/mohammed_vi.webp" alt="maroc">
+              <div class="border">
+
+              </div>
+            </div>
+            <div class="wrapper-info-mohammed_vi">
+              <div class="item--info-mohammed_vi">
+                <h2>Sa Majesté le Roi Mohammed vi que Dieu l'assiste</h2>
+                <img src="assets/images/icon--tir.webp" alt="maroc">
+                <p>La clé de voûte dans le nouveau dispositif constitutionnel est incontestablement l’article 1 qui
+                  pose, d’emblée et sans équivoque, les principes régulateurs du système politique marocain dans sa
+                  nouvelle configuration : « Le Maroc est une monarchie constitutionnelle, démocratique, parlementaire
+                  et sociale. Le régime constitutionnel du Royaume est fondé sur la séparation, l’équilibre et la
+                  collaboration des pouvoirs, ainsi que sur la démocratie citoyenne et participative, et les principes
+                  de bonne gouvernance et de la corrélation entre la responsabilité et la reddition des comptes ».</p>
+                <div class="date-right--mohammed_vi">
+                  <img src="assets/images/icon--tir1.webp" alt="maroc">
+                  <span>- Extrait du discours royal du JJ/MM/AAA</span>
+                  <div class="btn--investisseurs"">
+                      <a href=" #">Discours Royaux</a>
+                    <a href="#">Messages Royaux</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-aos="fade-up" data-aos-duration="1000">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row" id="top-footer">
+          <div class="col-lg-4">
+            <div class="logo-left-footer">
+              <a href="#">
+                <img src="./assets/images/logo_footer.webp" alt="maroc">
+              </a>
+
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="top-footer-center-application">
+              <h4>Téléchargez l'application</h4>
+              <div class="app-telecharger">
+                <a href="#">
+                  <img src="./assets/images/iphon.webp" alt="maroc">
+                </a>
+                <a href="#">
+                  <img src="./assets/images/android.webp" alt="maroc">
+                </a>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+
+            <div class="logo-right-footer">
+              <a href="#">
+                <img src="./assets/images/logo-right-footer.webp" alt="maroc">
+              </a>
+
+            </div>
+          </div>
+        </div>
+        <div class="row" id="center-footer">
+          <ul class="social-icon">
+            <!-- Social media -->
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="#" aria-label="maroc">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="#" aria-label="maroc">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="#" aria-label="maroc">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="#" aria-label="maroc">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="row btn--all" id="bottom-footer">
+          <a href="#">
+            Investisseurs
+          </a>
+          <a href="#">
+            Touristes
+          </a>
+          <a href="#" target="_blank">
+            Niya Maghribia
+          </a>
+          <a href="#" target="_blank">
+            Sahara.ma
+          </a>
+        </div>
+        <div class="row" id="bottom-footer-copyright">
+          <!-- Menu -->
+          <ul>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+          <div class="sc-copyright">
+            <p> Ministère de la Jeunesse, de la Culture et de la Communication ©2024 - Tous droits réservés</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="./assets/js/owl.carousel.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/highmaps.js"></script>
+  <script src="./assets/js/jquery.mapRegion.js"></script>
+
+  <!-- Your custom JS scripts -->
+  <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>
