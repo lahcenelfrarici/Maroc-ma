@@ -845,24 +845,24 @@ div.slider-element-maps {
   position: relative;
 }
 
-.slider-element-maps .owl-dots {
+.slider-element-maps .owl-dots, #actualites-internes .owl-dots{
   display: flex;
   gap: 9px;
   margin: auto;
 }
 
-div.slider-element-maps .owl-dot {
+div.slider-element-maps .owl-dot,#actualites-internes .owl-dot{
   background: #D2D2D2;
   width: 23px;
   height: 8px;
   border-radius: 6px;
 }
 
-div.slider-element-maps .owl-dot .active {
+div.slider-element-maps .owl-dot .active ,#actualites-internes .owl-dot .active{
   background: #335AB7;
 }
 
-div.slider-element-maps .owl-dots .active {
+div.slider-element-maps .owl-dots .active ,#actualites-internes .owl-dots .active{
   background-color: #335AB7;
 }
 
@@ -2265,18 +2265,18 @@ div.slider-element-maps {
   right: 0;
 }
 
-div.slider-element-maps .owl-dot {
+div.slider-element-maps .owl-dot,#actualites-internes  .owl-dot{
   background: #D2D2D2;
   width: 23px;
   height: 8px;
   border-radius: 6px;
 }
 
-div.slider-element-maps .owl-dot .active {
+div.slider-element-maps .owl-dot .active ,#actualites-internes  .owl-dot .active{
   background: #335AB7;
 }
 
-div.slider-element-maps .owl-dots .active {
+div.slider-element-maps .owl-dots .active ,actualites-internes  .owl-dots .active{
   background-color: #335AB7;
 }
 
@@ -3337,29 +3337,17 @@ main {
   z-index: 9;
 }
 
-.wrapper-accessibilty {
-
-  position: fixed;
-  right: 20px;
-  top: 0;
-  z-index: 9;
-  height: 100%;
-  bottom: 0;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+.wrapper-accessibilty {position: fixed;right: 0;top: 0;z-index: 9;height: 100%;bottom: 0;align-items: center;display: flex;flex-direction: column;justify-content: center;}
 
 .list-social-sticky li {
   height: 52px;
-  width: 52px;
+  width: 66px;
   background-color: #335AB7;
   align-items: center;
   display: flex;
   justify-content: center;
-  border-radius: 30px;
-  /* gap: 20px 0; */
+  border-bottom-left-radius: 27px;
+  border-top-left-radius: 27px;
 }
 
 .list-social-sticky ul {
@@ -3380,7 +3368,7 @@ main {
   margin: 15px 0 10px 0;
   height: 52px;
   width: 52px;
-  background-color: #335AB7;
+  background-color: #0F1B5C;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -3499,6 +3487,7 @@ ol.breadcrumb {
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .title--page {
@@ -3575,6 +3564,8 @@ section.wrapper--all-items .container .row:last-child {
   width: 85%;
   text-transform: uppercase;
   font-size: 20px;
+  font-weight: bold;
+  color: #0F1B5C;
 }
 
 .historique-des-chefs>div:last-child {
@@ -3610,8 +3601,12 @@ section.wrapper--decouvrir-egalement .row:last-child .items--egalements {
 }
 
 .column--img img {
+
   width: 100%;
-  height: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transition: all 0.6s ease-in-out
 }
 
 .items--egalements:hover {
@@ -3651,7 +3646,7 @@ section.wrapper--decouvrir-egalement .row:last-child .items--egalements {
   padding: 0;
 }
 
-#actualites-internes .slider-element-maps .owl-dots {
+#actualites-internes  .owl-dots {
   display: flex;
   gap: 9px;
   margin: auto;
@@ -3663,7 +3658,7 @@ section.wrapper--decouvrir-egalement .row:last-child .items--egalements {
   padding-top: 30px;
 }
 
-#actualites-internes .slider-element-maps .owl-dot {
+#actualites-internes  .owl-dot {
   width: 43px;
 }
 .btn--chambre-representants a{
@@ -3735,4 +3730,35 @@ section.wrapper--chambre-representants .container {
 
 section.wrapper--chambre-representants .container:last-child {
   padding-bottom: 0;
+}
+section.wrapper--decouvrir-egalement a:hover  img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  max-width: 100%;
+}
+
+.column--img {
+  overflow: hidden;
+}
+.sc-item-img:hover img {
+  transform: scale(1.1);
+  max-width: 100%;
+}
+
+.sc-item-img {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.sc-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.6s ease-in-out;
+}
+div#chatbot-setting {
+  justify-content: center;
+  left: 15px;
+  right: auto;
+  top: 14px;
 }
