@@ -1,6 +1,15 @@
 (function ($) {
   $(document).ready(function () {
+// 
+window.playVideo = function (button) {
+  var videoSrc = $(button).closest('.video-item').data('video-src');
+  $('#videoIframe').attr('src', videoSrc);
+  $('#videoModal').modal('show');
+};
 
+$('#videoModal').on('hidden.bs.modal', function () {
+  $('#videoIframe').attr('src', '');
+});
     // 
     $(".maps .slider-element-maps").owlCarousel({
       loop: true,
