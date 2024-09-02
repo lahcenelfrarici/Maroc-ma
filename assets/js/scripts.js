@@ -1,15 +1,15 @@
 (function ($) {
   $(document).ready(function () {
-// 
-window.playVideo = function (button) {
-  var videoSrc = $(button).closest('.video-item').data('video-src');
-  $('#videoIframe').attr('src', videoSrc);
-  $('#videoModal').modal('show');
-};
+    // 
+    window.playVideo = function (button) {
+      var videoSrc = $(button).closest('.video-item').data('video-src');
+      $('#videoIframe').attr('src', videoSrc);
+      $('#videoModal').modal('show');
+    };
 
-$('#videoModal').on('hidden.bs.modal', function () {
-  $('#videoIframe').attr('src', '');
-});
+    $('#videoModal').on('hidden.bs.modal', function () {
+      $('#videoIframe').attr('src', '');
+    });
     // 
     $(".maps .slider-element-maps").owlCarousel({
       loop: true,
@@ -18,7 +18,7 @@ $('#videoModal').on('hidden.bs.modal', function () {
       dots: true,
       mouseDrag: false, // Disable mouse drag
       touchDrag: false, // Disable touch drag
-      autoHeight:true,
+      autoHeight: true,
       // navText: [
       //   "<i class='fa-solid fa-angle-left'></i>",
       //   "<i class='fa-solid fa-angle-right'></i>"
@@ -31,7 +31,7 @@ $('#videoModal').on('hidden.bs.modal', function () {
         },
         600: {
           items: 1,
-          autoHeight:false,
+          autoHeight: false,
         },
         1000: {
           items: 1,
@@ -44,12 +44,12 @@ $('#videoModal').on('hidden.bs.modal', function () {
       loop: true,
       nav: false,
       items: 3,
-      margin:10,
+      margin: 10,
       dots: true,
       // autoWidth:true,
       // mouseDrag: false, // Disable mouse drag
       // touchDrag: false, // Disable touch drag
-      autoHeight:true,
+      autoHeight: true,
       // navText: [
       //   "<i class='fa-solid fa-angle-left'></i>",
       //   "<i class='fa-solid fa-angle-right'></i>"
@@ -62,7 +62,7 @@ $('#videoModal').on('hidden.bs.modal', function () {
         },
         600: {
           items: 1,
-          autoHeight:false,
+          autoHeight: false,
         },
         1000: {
           items: 3,
@@ -71,37 +71,37 @@ $('#videoModal').on('hidden.bs.modal', function () {
       }
     });
     // 
-        // 
-        $(".slider-voyages-internes").owlCarousel({
-          loop: true,
-          nav: false,
+    // 
+    $(".slider-voyages-internes").owlCarousel({
+      loop: true,
+      nav: false,
+      items: 1,
+      margin: 10,
+      dots: true,
+      // autoWidth:true,
+      // mouseDrag: false, // Disable mouse drag
+      // touchDrag: false, // Disable touch drag
+      autoHeight: true,
+      // navText: [
+      //   "<i class='fa-solid fa-angle-left'></i>",
+      //   "<i class='fa-solid fa-angle-right'></i>"
+      // ],
+      responsiveClass: true,
+      responsive: {
+        0: {
           items: 1,
-          margin:10,
-          dots: true,
-          // autoWidth:true,
-          // mouseDrag: false, // Disable mouse drag
-          // touchDrag: false, // Disable touch drag
-          autoHeight:true,
-          // navText: [
-          //   "<i class='fa-solid fa-angle-left'></i>",
-          //   "<i class='fa-solid fa-angle-right'></i>"
-          // ],
-          responsiveClass: true,
-          responsive: {
-            0: {
-              items: 1,
-    
-            },
-            600: {
-              items: 1,
-              autoHeight:false,
-            },
-            1000: {
-              items: 1,
-              dragEndSpeed: 0,
-            }
-          }
-        });
+
+        },
+        600: {
+          items: 1,
+          autoHeight: false,
+        },
+        1000: {
+          items: 1,
+          dragEndSpeed: 0,
+        }
+      }
+    });
     // 
     // Initially show the first element and the first detail
     $('.element-sc').first().addClass('active');
@@ -233,4 +233,22 @@ $('#videoModal').on('hidden.bs.modal', function () {
     //
 
   });
+  // Back to top
+var amountScrolled = 200;
+var amountScrolledNav = 25;
+
+$(window).scroll(function() {
+  if ( $(window).scrollTop() > amountScrolled ) {
+    $('button.back-to-top').addClass('show');
+  } else {
+    $('button.back-to-top').removeClass('show');
+  }
+});
+
+$('button.back-to-top').click(function() {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 800);
+  return false;
+});
 })(jQuery);
