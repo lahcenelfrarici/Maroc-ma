@@ -260,5 +260,33 @@
     }, 800);
     return false;
   });
+  // Menu
+  $("#navbarNavDropdown .nav-item").hover(
+    function () {
+      $(this).addClass("hover-stable-line");
+    },
+    function () {
+      $(this).removeClass("hover-stable-line");
+    }
+  );
+  //
+  $('.menu-subs-inner').each(function () {
+    var menuCols = $(this).find('.menu-subs-col').length;
+
+    switch (menuCols) {
+      case 1:
+        $(this).addClass("class-list-title");
+        break;
+        // case 6:
+        //   $(this).addClass("class-for-6");
+        //   break;
+        // case 7:
+        //   $(this).addClass("class-for-7");
+        //   break;
+      default:
+        // Handle other cases if needed
+        break;
+    }
+  });
 
 })(jQuery);
