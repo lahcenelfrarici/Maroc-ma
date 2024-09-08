@@ -112,6 +112,29 @@
       }
     });
     // 
+    // $(".slider-voyages-internes-center").owlCarousel({
+    //   loop: true,
+    //   padding: 15,
+    //   nav: false,
+    //   dots: true,
+    //   stagePadding: 20,
+
+    //   responsive: {
+    //     0: {
+    //       items: 1,
+    //       stagePadding: 20,
+    //       margin: 15,
+    //     },
+    //     600: {
+    //       items: 1,
+    //       stagePadding: 0,
+    //     },
+    //     1000: {
+    //       items: 1,
+    //     },
+    //   },
+    // });
+    // 
     // Initially show the first element and the first detail
     $('.element-sc').first().addClass('active');
     $('.element-sc').first().find('.information--detail').first().addClass('active');
