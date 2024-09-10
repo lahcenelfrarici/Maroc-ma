@@ -1,4 +1,7 @@
 (function ($) {
+  $(".main-menu button.navbar-toggler").click(function() {
+    $(".mobile-menu").toggleClass("showing--menu-mobile");
+  });
   // Handle click events on nav items with submenus within .mobile-menu
   $('.mobile-menu .nav-item').on('click', function (event) {
     var $this = $(this);

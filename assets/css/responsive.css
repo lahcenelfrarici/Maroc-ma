@@ -48,11 +48,24 @@
 
     .btn--investisseurs a {
         padding: 10px 10px;
+        font-size: 15px;
+    }
+    .element---shwoing-service {
+        padding: 15px 0;
     }
 
 }
 
 @media (max-width: 991px) {
+    .paragraph-wrapper {
+        top: 60%;
+    }    
+    .paragraph-wrapper h1 {
+        font-size: 35px;
+    }
+    .main-menu button.navbar-toggler {
+        background-color: #fff;
+    }
     /* Target elements within .mobile-menu */
 /* .mobile-menu .menu-subs-overlay {
     display: none;
@@ -124,10 +137,18 @@
         left: 0;
         width: auto;
         position: relative;
-        justify-content: left;
+        justify-content: center;
         padding-top: 11px;
     }
-
+    .title--le-maroc h3 {
+        text-align: center;
+    }
+    .element-sc.active .row {
+        gap: 30px 0;
+    }
+    .detail-item {
+        height: auto;
+    }
     .sc-copyright {
         padding-left: 0;
     }
@@ -179,7 +200,7 @@
     }
 
     .showing--detail {
-        padding-left: 0;
+        padding-left: 20px;
     }
 
     .detail-item {
@@ -335,9 +356,30 @@
     justify-content: right;
     right: 10px;
 }
+.showing--menu-mobile .container-fluid {
+    /* margin: 0; */
+}
 
+.showing--menu-mobile .container-fluid nav  .container-fluid {
+    /* padding: 0; */
+}
+
+.showing--menu-mobile .container-fluid nav .container-fluid div#navbarNavDropdown {
+    background-color: #fff;
+    padding: 30px;
+}
+
+.showing--menu-mobile .container-fluid nav .container-fluid div#navbarNavDropdown li.nav-item a {
+    color: #111111;
+}
   
-
+/* button.back-to-top.show {
+    bottom: 60px;
+} */
+div#chatbot-setting {
+    gap: 10px 0;
+    left: 0;
+}
 }
 
 @media (max-width: 767px) {
@@ -368,7 +410,7 @@
         font-size: 20px;
     }
 
-    .wrapper-accessibilty {
+    /* .wrapper-accessibilty {
         right: auto;
         flex-direction: column;
         justify-content: end;
@@ -378,18 +420,18 @@
         justify-content: center;
         bottom: 20px;
         align-items: end;
-    }
+    } */
 
-    .list-social-sticky ul {
+    /* .list-social-sticky ul {
         flex-direction: row;
         margin-bottom: 0;
         gap: 0 10px;
-    }
+    } */
 
-    .list-social-sticky li {
+    /* .list-social-sticky li {
         height: 40px;
         width: 40px;
-    }
+    } */
 
     .wrapper-accessibilty button {
         height: 40px;
