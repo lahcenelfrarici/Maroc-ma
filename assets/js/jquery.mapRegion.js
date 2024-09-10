@@ -198,7 +198,7 @@ jQuery(function ($) {
       useHTML: true,
       borderWidth: 0,
       style: {
-          padding: 0
+        padding: 0
       },
       format: "{point.name}",
     },
@@ -222,7 +222,6 @@ jQuery(function ($) {
         color: "#BB0A21",
         name: "Maroc",
         showInLegend: false,
-
         states: {
           hover: {
             color: "#0C9B2E",
@@ -235,29 +234,41 @@ jQuery(function ($) {
         },
         point: {
           events: {
-            // mouseOver: function () {
-            //   $(".carte-item").hide();
-            //   $("#" + this.id).show();
-            // },
             select: function () {
               this.clicked = true;
             },
-            // mouseOut: function () {
-            //   $(".carte-item").hide();
-            //   $(".carte-item-active").show();
-            // },
             click: function () {
+              // Hide all carte items
               $(".carte-item").hide();
+              // Show the selected item by id
               $("#" + this.id).fadeIn(300);
+  
+              // Remove active class from all carte items
               $(".carte-item").removeClass("carte-item-active");
+              // Add active class to the clicked item
               $("#" + this.id).addClass("carte-item-active");
+  
+              // Get the 'data-img' attribute of the clicked item and update background image
+              let backgroundImage = $("#" + this.id).data("img");
+              $(".maps").css("background-image", "url(" + backgroundImage + ")");
             },
           },
         },
       },
     },
   });
+  
+  // Trigger the click event programmatically for the first item
   chart.series[0].data[0].firePointEvent("click", {
     ctrlKey: true,
   });
+  
+  // Loop through data points to fire click event for a specific point (example: id = 101)
+  chart.series[0].data.forEach(function (point) {
+    if (point.id === "101") {
+      point.firePointEvent("click"); // Trigger the click event programmatically
+    }
+  });
+  
+  
 });

@@ -1,4 +1,17 @@
 (function ($) {
+  // Handle click events on nav items with submenus within .mobile-menu
+  $('.mobile-menu .nav-item').on('click', function (event) {
+    var $this = $(this);
+
+    // Toggle the active class for the clicked nav item
+    $this.toggleClass('active');
+
+    // Close other open submenus
+    $('.mobile-menu .nav-item').not($this).removeClass('active');
+
+    // Prevent default link behavior
+    event.preventDefault();
+  });
   window.playVideo = function (button) {
     var videoSrc = $(button).closest('.video-item').data('video-src');
     $('#videoIframe').attr('src', videoSrc);
@@ -47,6 +60,37 @@
           dragEndSpeed: 0,
         }
       }
+    });
+    // 
+    $(".slider--owl-v2").owlCarousel({
+      loop: true,
+      nav: false,
+      items: 1,
+      dots: true,
+
+      autoHeight: true,
+      // navText: [
+      //   "<i class='fa-solid fa-angle-left'></i>",
+      //   "<i class='fa-solid fa-angle-right'></i>"
+      // ],
+      responsive: {
+        0: {
+          items: 1,
+          dots: true,
+        },
+
+        600: {
+          items: 1,
+        },
+
+        1024: {
+          items: 1,
+        },
+
+        1366: {
+          items: 1,
+        },
+      },
     });
     // 
     $(".slider-actualites-internes").owlCarousel({
@@ -113,27 +157,72 @@
     });
     // 
     // $(".slider-voyages-internes-center").owlCarousel({
+    //   center: true,
     //   loop: true,
-    //   padding: 15,
     //   nav: false,
+    //   items: 3,
     //   dots: true,
-    //   stagePadding: 20,
-
+    //   margin: 10,
     //   responsive: {
     //     0: {
+    //       center: false,
     //       items: 1,
-    //       stagePadding: 20,
-    //       margin: 15,
+    //       margin: 10,
     //     },
     //     600: {
-    //       items: 1,
-    //       stagePadding: 0,
-    //     },
-    //     1000: {
-    //       items: 1,
-    //     },
-    //   },
+    //       items: 3
+    //     }
+    //   }
     // });
+    var $owl_internes = $('.slider-voyages-internes-center');
+
+    $owl_internes.children().each(function (index) {
+      $(this).attr('data-position', index); // NB: .attr() instead of .data()
+    });
+
+    $owl_internes.owlCarousel({
+      touchDrag: false,
+      mouseDrag: false,
+      center: true,
+      loop: true,
+      // autoplay:true,
+      items: 3,
+      dots: true,
+      autoHeight: true,
+      // navText: [
+      //   '<img class="arrow-img-down" src="/wp-content/themes/tmz/image/larg-left.png" alt="Polygon">',
+      //   '<img class="arrow-img-down-right" src="/wp-content/themes/tmz/image/larg-right.png" alt="Polygon">',
+      // ],
+
+      // navText: ['<img class="arrow-img-down" src="image/arrow-down-right.png">', '<img class="arrow-img-down-right" src="image/arrow-down-left.png">'],
+
+      onInitialized: (event) => {
+        // Hide navigation arrows and dots if there's one or zero items
+        if (event.item.count <= 1) {
+          $(".our-new  .container .owl-carousel .owl-nav, .our-new  .container .owl-carousel .owl-dots").hide();
+        }
+      },
+
+      responsive: {
+        0: {
+          items: 1,
+          dots: true,
+        },
+
+        600: {
+          items: 3,
+        },
+
+        1024: {
+          items: 3,
+        },
+
+        1366: {
+          items: 3,
+        },
+      },
+    });
+
     // 
     // Initially show the first element and the first detail
     $('.element-sc').first().addClass('active');

@@ -101,8 +101,6 @@ img {
 .paragraph-wrapper h1 {
   font-family: "montserrat black";
   font-size: 45px;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 .top-header>ul {
@@ -824,7 +822,7 @@ ul.b-breadcrumb-list {
 }
 
 .bg-maps {
-  /* background-image: url(../images/bg-maps.webp); */
+  background-image: url(../images/bg-maps.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -891,7 +889,6 @@ div.slider-element-maps .owl-dot .active,
 
 .element-sc {
   display: none;
-  flex-direction: column;
   /* Hide all elements by default */
 }
 
@@ -901,8 +898,8 @@ div.slider-element-maps .owl-dot .active,
   /* Optional: Add transition effects */
   transition: opacity 0.5s ease;
   opacity: 1;
-  align-items: normal;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .element-sc.fade-out {
@@ -1585,7 +1582,6 @@ img {
   display: inline;
   font-weight: bold;
   position: relative;
-  font-size: 13px;
 }
 
 .main-menu .nav-item a {
@@ -2257,7 +2253,7 @@ ul.b-breadcrumb-list {
 }
 
 .bg-maps {
-  /* background-image: url(../images/bg-maps.webp); */
+  background-image: url(../images/bg-maps.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2293,7 +2289,7 @@ div.slider-element-maps {
   justify-content: center;
   position: absolute;
   width: 81%;
-  bottom: 13px;
+  /* bottom: 13px; */
   right: 0;
   /* left: 0; */
 }
@@ -2321,15 +2317,14 @@ actualites-internes .owl-dots .active {
   padding: 30px 15px 30px 15px;
 }
 
-.element-sc.active .row {
+.element-sc.active {
   display: flex;
   /* Show active element */
   /* Optional: Add transition effects */
   transition: opacity 0.5s ease;
   opacity: 1;
-  justify-content: space-between;
-  width: 100%;
   align-items: center;
+  justify-content: center;
 }
 
 .element-sc.fade-out {
@@ -2878,8 +2873,6 @@ div.slider-element-maps p {
   border-radius: 10px;
   border: 1px solid #fff;
   padding: 30px;
-  position: relative;
-  margin-bottom: 100px;
 }
 
 .detail-item button {
@@ -3390,34 +3383,32 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  right: -93px;
-  transition: right 0.35s ease-in-out;
 }
 
 .list-social-sticky li {
   height: 52px;
-  width: auto;
+  width: 66px;
   background-color: #335AB7;
   align-items: center;
   display: flex;
   justify-content: center;
   border-bottom-left-radius: 27px;
   border-top-left-radius: 27px;
-  transition: all .4s linear;
 }
 
 .list-social-sticky ul {
   gap: 10px 0;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .list-social-sticky li a {
   color: #fff;
 }
 
-
+.list-social-sticky li:hover {
+  background-color: #0f1b5c;
+}
 
 .wrapper-accessibilty button {
   margin: 15px 0 10px 0;
@@ -3458,7 +3449,7 @@ div.slider-element-maps p {
 
 .service .container {
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .main-menu.is-sticky a.navbar-brand img:nth-child(1) {
@@ -4423,7 +4414,6 @@ div#navbarNavDropdown {
   background: #fff;
   border-radius: 10px;
   padding: 20px 40px;
-  text-align: left;
 }
 
 
@@ -5021,34 +5011,4 @@ div#les--secteurs h3 {
 
 #owl--slider-v2 .btn--chambre-representants {
   position: relative;
-}
-.list-social-sticky ul li a {
-  display: flex;
-  align-items: center;
-  gap: 0 30px;
-  justify-content: space-between;
-  padding: 15px;
-  margin: auto;
-  text-align: center;
-  margin: auto;
-  width: 150px;
-}
-
-
-
-.list-social-sticky ul li:hover {
-  transform: translateX(-92px);
-  width: 100%;
-}
-
-.list-social-sticky ul li a i {
-  position: relative;
-  left: 5px;
-  color: #fff;
-}
-.service--appende {
-  position: absolute;
-  top: calc(100% + 50px);
-  left: 50%;
-  transform: translateX(-50%);
 }
