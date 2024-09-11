@@ -5,7 +5,9 @@
     body {
         overflow-x: hidden;
     }
-
+    .owl-items .wrapper-slider {
+        height: 50vh;
+    }
     .slider-element-maps .owl-dots {
         bottom: 0;
         right: auto;
@@ -57,11 +59,19 @@
 }
 
 @media (max-width: 991px) {
+    .item-wrapper div:not([class]) {
+        flex-direction: column;
+        gap: 15px 0;
+    }
+    
+    .item-wrapper div:not([class]) a {
+        width: 100%;
+    }
     .paragraph-wrapper {
         top: 60%;
     }    
     .paragraph-wrapper h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
     .main-menu button.navbar-toggler {
         background-color: #fff;
@@ -383,6 +393,44 @@ div#chatbot-setting {
 }
 
 @media (max-width: 767px) {
+    .item-wrapper div:not([class]) {
+        flex-direction: column;
+        gap: 15px 0;
+    }
+    
+    .item-wrapper div:not([class]) a {
+        width: 100%;
+    }
+    
+    section.wrapper--historique-des-chefs .container  ul li .item-text {
+        flex-direction: column;
+        gap: 20px 0;
+    }
+    
+    section.wrapper--historique-des-chefs {}
+    
+    .container {}
+    
+    section.wrapper--historique-des-chefs .container ul li .item-wrapper {
+        width: 100%;
+    }
+    
+    .timeline-container ul li {
+        z-index: 2;
+        padding-bottom: 59px;
+    }
+    
+    .timeline-container ul li .item-icon {
+        transform: translateY(-50%);
+        top: 100%;
+    }
+    
+    
+    
+    .timeline-container ul li:before {
+        top: 50%;
+        z-index: -1;
+    }
     .historique-des-chefs {
         flex-direction: column;
     }

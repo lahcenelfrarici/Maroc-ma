@@ -1,4 +1,95 @@
 (function ($) {
+  $(window).on('scroll', function() {
+    var scrollTop = $(window).scrollTop();
+    var section = $('.wrapper--historique-des-chefs');
+    var sectionTop = section.offset().top;
+    var sectionBottom = sectionTop + section.outerHeight();
+    var img = $('.time--scrolle img');
+    var imgHeight = img.outerHeight();
+    
+    // Check if we are within the scrollable section
+    if (scrollTop >= sectionTop && scrollTop <= sectionBottom - imgHeight) {
+        var scrolledPercent = (scrollTop - sectionTop) / (sectionBottom - sectionTop - imgHeight);
+        
+        // Move the image based on scroll position
+        img.css('transform', 'translateY(' + (scrolledPercent * 100) + '%)');
+    } else if (scrollTop < sectionTop) {
+        // Before the section
+        img.css('transform', 'translateY(0)');
+    } else if (scrollTop > sectionBottom - imgHeight) {
+        // After the section
+        img.css('transform', 'translateY(120%)');
+    }
+});
+
+  // var sticky = new Sticky('.selector');
+// 
+ // Count the number of items
+ const itemsCount = $(".owl-carousel .owl-items").length;
+
+ if (itemsCount > 1) {
+   // Initialize Owl Carousel when there are 2 or more items
+   $(".owl-carousel").owlCarousel({
+     items: 1, // Show one item at a time
+     loop: true, // Loop through items
+     autoplay: false, // Disable Owl autoplay
+     video: true, // Enable video support
+    //  onTranslate: stopAllMedia, // Stop media when the slide changes
+    //  onTranslated: autoplayMedia, // Autoplay media when slide is visible
+   });
+ } else {
+   // If there's only 1 item, display it normally
+   $('.owl-carousel').addClass('single-item-mode');
+   $('.single-item-mode').css({
+     'display': 'block', // Display the single item without carousel
+     'width': '100%' // Ensure the item takes up full width
+   });
+ }
+
+//  // Stop all media when the slide changes
+//  function stopAllMedia() {
+//    // Stop all HTML5 videos
+//    $('video.local-video').each(function() {
+//      this.pause();
+//      this.currentTime = 0; // Reset video to start
+//    });
+
+//    // Stop all YouTube iframes
+//    $('iframe.youtube-iframe').each(function() {
+//      const iframeSrc = $(this).attr('src');
+//      $(this).attr('src', iframeSrc); // Reset iframe to stop video
+//    });
+//  }
+
+//  // Autoplay media when the slide is visible
+//  function autoplayMedia(event) {
+//    const $currentSlide = $('.owl-item.active .slider-main');
+
+//    // Autoplay HTML5 video if present
+//    const $video = $currentSlide.find('video.local-video');
+//    if ($video.length) {
+//      $video.get(0).play(); // Play video
+//    }
+
+//    // Autoplay YouTube iframe if present
+//    const $iframe = $currentSlide.find('iframe.youtube-iframe');
+//    if ($iframe.length) {
+//      const player = new YT.Player($iframe[0], {
+//        events: {
+//          'onReady': function(event) {
+//            event.target.playVideo(); // Autoplay YouTube video
+//          }
+//        }
+//      });
+//    }
+//  }
+
+// Load YouTube IFrame API asynchronously
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// 
   $(".main-menu button.navbar-toggler").click(function() {
     $(".mobile-menu").toggleClass("showing--menu-mobile");
   });

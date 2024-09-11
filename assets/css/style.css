@@ -103,6 +103,7 @@ img {
   font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .top-header>ul {
@@ -849,21 +850,22 @@ div.slider-element-maps {
 }
 
 .slider-element-maps .owl-dots,
-#actualites-internes .owl-dots{
+#actualites-internes .owl-dots {
   display: flex;
   gap: 9px;
   margin: auto;
 }
-#owl--slider-v2    .owl-dots{
+
+#owl--slider-v2 .owl-dots {
   display: flex;
-    gap: 9px;
-    margin: auto;
-    justify-content: center;
-    position: relative;
-    width: 81%;
-    bottom: 0;
-    right: 0;
-    padding-top: 30px;
+  gap: 9px;
+  margin: auto;
+  justify-content: center;
+  position: relative;
+  width: 81%;
+  bottom: 0;
+  right: 0;
+  padding-top: 30px;
 }
 
 div.slider-element-maps .owl-dot,
@@ -873,19 +875,23 @@ div.slider-element-maps .owl-dot,
   height: 8px;
   border-radius: 6px;
 }
-#owl--slider-v2  .owl-dot{
+
+#owl--slider-v2 .owl-dot {
   background: #D2D2D2;
   width: 41px;
   height: 8px;
   border-radius: 6px;
 }
+
 div.slider-element-maps .owl-dot .active,
 #actualites-internes .owl-dot .active,
-#owl--slider-v2  .owl-dot .active{
+#owl--slider-v2 .owl-dot .active {
   background: #335AB7;
 }
 
-.slider-element-maps .owl-dots .active, #actualites-internes .owl-dots .active,#owl--slider-v2 .owl-dots .active {
+.slider-element-maps .owl-dots .active,
+#actualites-internes .owl-dots .active,
+#owl--slider-v2 .owl-dots .active {
   background-color: #335AB7;
 }
 
@@ -1585,7 +1591,7 @@ img {
   display: inline;
   font-weight: bold;
   position: relative;
-  font-size: 13px;
+
 }
 
 .main-menu .nav-item a {
@@ -1594,6 +1600,7 @@ img {
   display: inline;
   font-weight: bold;
   position: relative;
+  font-size: 13px;
 }
 
 
@@ -2298,7 +2305,8 @@ div.slider-element-maps {
   /* left: 0; */
 }
 
-.slider-element-maps .owl-dot, #actualites-internes .owl-dot {
+.slider-element-maps .owl-dot,
+#actualites-internes .owl-dot {
   background: #D2D2D2;
   width: 23px;
   height: 8px;
@@ -3029,6 +3037,7 @@ div.slider-element-maps p {
   margin: auto;
   padding: 10px 30px;
   border-radius: 10px;
+  z-index: 2;
   margin-top: 40px;
 }
 
@@ -3756,10 +3765,12 @@ section.wrapper--info--paragraphs {
   border-radius: 10px;
   width: max-content;
 }
+
 .services_numeriques h3 {
   font-size: 14px;
   font-weight: bold;
 }
+
 .chambre-representants--img {
   height: 484px;
   border-radius: 10px;
@@ -3987,15 +3998,15 @@ button.back-to-top.show:active {
   left: -18px;
   top: 50%;
   content: " ";
-  border: 8px solid rgba(255, 255, 255, 0.74);
+  border: 1px solid #005A8F;
   border-radius: 500%;
-  background: #258CC7;
-  height: 20px;
+  background: #FFFFFF;
+  height: 14px;
   left: 0;
-  width: 20px;
+  width: 14px;
   right: 0;
   margin: auto;
-  z-index: 99;
+  z-index: 9;
   transform: translateY(-50%);
 }
 
@@ -4015,6 +4026,7 @@ ul li .item-title p {
   font-size: 20px;
   font-weight: bold;
   color: #111111;
+  line-height: 29px;
 }
 
 ul li .item-detail {
@@ -4032,8 +4044,8 @@ ul li .item-timestamp {
 .timeline-container ul li:before {
   position: absolute;
   content: "";
-  width: 4px;
-  background-color: #333;
+  width: 1px;
+  background-color: #005A8F;
   left: 0;
   top: 0;
   z-index: 1;
@@ -4086,6 +4098,12 @@ ul li .item-timestamp {
   background: #0F1B5C;
   border-radius: 10px;
   padding: 15px 20px;
+  width: 179px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 17px;
 }
 
 .timeline-cotainer ul li:before {
@@ -4362,7 +4380,7 @@ section.filter--search--box {
   background: 0 0;
   z-index: 20;
   background-color: #fff;
-  top: 100px;
+  top: 80px;
   opacity: 0;
   visibility: hidden;
   transform: scale(.65);
@@ -4527,9 +4545,11 @@ section.touristes--all-card .row .sc-item:nth-child(2) h3 {
 section.touristes--all-card .row .sc-item:nth-child(3) h3 {
   color: #182C53;
 }
+
 section.touristes--all-card .sc-item-img img {
   border-radius: 0;
 }
+
 section.touristes--all-card .row .sc-item:nth-child(4) h3 {
   color: #017C7A;
 }
@@ -4545,13 +4565,16 @@ section.touristes--all-card .row .sc-item:nth-child(3) .body--card-maroc {
 section.touristes--all-card .row .sc-item:nth-child(4) .body--card-maroc {
   border-bottom: 4px solid #017C7A
 }
-.touristes--all-card .container > div:nth-child(2) {
+
+.touristes--all-card .container>div:nth-child(2) {
   gap: 30px 0;
 }
+
 section.touristes--all-card .btn--chambre-representants {
   margin: auto;
   margin-top: 40px;
 }
+
 #odd-even-card-maroc .sc-item .sc-item-img {
   height: 472px;
   width: 59%;
@@ -4560,7 +4583,7 @@ section.touristes--all-card .btn--chambre-representants {
 
 
 
-#odd-even-card-maroc .sc-item > a {
+#odd-even-card-maroc .sc-item>a {
   display: flex;
   gap: 0 20px;
   align-items: center;
@@ -4581,31 +4604,31 @@ section.touristes--all-card .btn--chambre-representants {
 }
 
 section.touristes--all-card .btn--chambre-representants {
-    margin: auto;
-    margin-top: 40px;
+  margin: auto;
+  margin-top: 40px;
 }
 
 #odd-even-card-maroc .btn--chambre-representants:after {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    position: absolute;
-    right: 18px;
-    bottom: 0;
-    content: '\f08e';
-    height: 100%;
-    display: flex;
-    align-items: center;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 18px;
+  bottom: 0;
+  content: '\f08e';
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #odd-even-card-maroc .btn--chambre-representants {
-    margin-left: 0;
-    margin-top: 5px;
-    position: relative;
-    padding: 20px 48px  20px 25px;
-    color: #fff;
+  margin-left: 0;
+  margin-top: 5px;
+  position: relative;
+  padding: 20px 48px 20px 25px;
+  color: #fff;
 }
 
-#odd-even-card-maroc .row .sc-item:nth-child(2)  .btn--chambre-representants {
+#odd-even-card-maroc .row .sc-item:nth-child(2) .btn--chambre-representants {
   background-color: transparent;
   border: 1px solid #B01A14;
   color: #B01A14;
@@ -4628,16 +4651,19 @@ section.touristes--all-card .btn--chambre-representants {
   border: 1px solid #017C7A;
   color: #017C7A;
 }
-#odd-even-card-maroc .row .sc-item:nth-child(5)  .btn--chambre-representants {
+
+#odd-even-card-maroc .row .sc-item:nth-child(5) .btn--chambre-representants {
   background-color: transparent;
   border: 1px solid #5C190F;
   color: #5C190F;
 }
+
 #odd-even-card-maroc .row .sc-item:nth-child(6) .btn--chambre-representants {
   background-color: transparent;
   border: 1px solid #B01A14;
   color: #B01A14;
 }
+
 section.touristes--all-card .row .sc-item:nth-child(5) h3 {
   color: #5C190F;
 }
@@ -4645,6 +4671,7 @@ section.touristes--all-card .row .sc-item:nth-child(5) h3 {
 section.touristes--all-card .row .sc-item:nth-child(6) h3 {
   color: #B01A14;
 }
+
 section.touristes--all-card .row .sc-item:nth-child(5) .body--card-maroc {
   border-bottom: 4px solid #5C190F;
 }
@@ -4652,11 +4679,13 @@ section.touristes--all-card .row .sc-item:nth-child(5) .body--card-maroc {
 section.touristes--all-card .row .sc-item:nth-child(6) .body--card-maroc {
   border-bottom: 4px solid #B01A14;
 }
+
 #tabs--tourisme {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(/assets/images/bg---tabs.png);
 }
+
 #tabs--tourisme h2 {
   font-size: 32px;
   font-weight: bold;
@@ -4664,7 +4693,7 @@ section.touristes--all-card .row .sc-item:nth-child(6) .body--card-maroc {
   padding-bottom: 2%;
 }
 
-#tabs--tourisme  .tabs--item {
+#tabs--tourisme .tabs--item {
   background-color: transparent;
 }
 
@@ -4697,62 +4726,66 @@ section.touristes--all-card .row .sc-item:nth-child(6) .body--card-maroc {
 #tabs--tourisme .all-item--service {
   border: 0;
 }
-#odd-even-card-maroc .container > div:nth-child(2) >div:nth-child(even) a {
+
+#odd-even-card-maroc .container>div:nth-child(2)>div:nth-child(even) a {
   flex-direction: row-reverse;
 }
 
-#odd-even-card-maroc .container > div:nth-child(2) >div:nth-child(even) a .body--card-maroc {
+#odd-even-card-maroc .container>div:nth-child(2)>div:nth-child(even) a .body--card-maroc {
   left: 0;
   right: auto;
 }
 
 
 div#les--secteurs .info--bottom-date-more {
-    flex-direction: column;
-    gap: 13px 0;
-    max-width: 100%;
+  flex-direction: column;
+  gap: 13px 0;
+  max-width: 100%;
 }
 
 div#les--secteurs .info--bottom-date-more .btn--chambre-representants {
-    width: 100%;
-    color: #335AB7;
-    border: 1px solid #335AB7;
-    background-color: transparent;
+  width: 100%;
+  color: #335AB7;
+  border: 1px solid #335AB7;
+  background-color: transparent;
 }
 
 
 
 div#les--secteurs .card-body {
-    padding: 30px;
+  padding: 30px;
 }
 
 
 
 div#les--secteurs .wrapper-img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
 }
 
 div#les--secteurs .wrapper-img img {
-    border-radius: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    overflow: hidden;
+  border-radius: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
 }
+
 div#les--secteurs .info--bottom-date-more .btn--chambre-representants {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0 20px;
 }
+
 .investisseurs--card .col-lg-12 h2 {
   color: #0F1B5C;
 }
+
 .wrapper--visitez_morocco {
   background-color: #0F1B5C;
   border-radius: 10px;
@@ -4767,6 +4800,7 @@ div#les--secteurs .info--bottom-date-more .btn--chambre-representants {
 .info--visitez_morocco h2 {
   color: #fff;
 }
+
 .info--visitez_morocco h3 {
   font-size: 24px;
   font-weight: 200;
@@ -4778,6 +4812,7 @@ div#les--secteurs .info--bottom-date-more .btn--chambre-representants {
   font-weight: bold;
   font-family: "montserrat Bold";
 }
+
 .info--visitez_morocco a {
   display: flex;
   align-items: center;
@@ -4791,6 +4826,7 @@ div#les--secteurs .info--bottom-date-more .btn--chambre-representants {
   position: relative;
   top: -4px;
 }
+
 /*  */
 .sectors-large .owl-height .owl-item.active.center {
   transform: scale(1);
@@ -4799,12 +4835,14 @@ div#les--secteurs .info--bottom-date-more .btn--chambre-representants {
   right: auto;
   top: AUTO;
 }
+
 .sectors-large .sectors-large .owl-item.cloned.active {
   transform: scale(.9);
   position: relative;
   right: 25px;
   top: 4px;
 }
+
 .sectors-large .owl-height .owl-item.active.center .item-sectors {
   width: 1180px !important;
   right: 86%;
@@ -4814,22 +4852,25 @@ div#les--secteurs .info--bottom-date-more .btn--chambre-representants {
   cursor: auto;
   margin: 0;
 }
+
 .sectors-large .owl-item.center>div {
   cursor: auto;
   margin: 0;
 }
+
 .sectors-large .owl-item .item-sectors {
   cursor: pointer;
   margin: 6% 3%;
   transition: margin 0.4s ease;
   height: 315px;
 }
+
 .our-news .owl-carousel .owl-stage-outer {
   height: 415.375px !important;
 }
 
 
-.card.item-sectors >div {
+.card.item-sectors>div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4856,6 +4897,7 @@ div#les--secteurs .info--bottom-date-more .btn--chambre-representants {
 .sectors-large .owl-item .item-sectors {
   background-color: rgba(255, 255, 255, 0.6);
 }
+
 .slider-voyages-internes-center .owl-dots {
   display: flex;
   align-items: center;
@@ -4877,12 +4919,13 @@ div#les--secteurs .info--bottom-date-more .btn--chambre-representants {
 .slider-voyages-internes-center .owl-stage-outer {
   margin-bottom: 4%;
 }
+
 .slider-voyages-internes-center .owl-stage-outer .owl-stage {
   display: flex;
   align-items: center;
 }
 
-.slider-voyages-internes-center .owl-stage-outer  .card.item-sectors {
+.slider-voyages-internes-center .owl-stage-outer .card.item-sectors {
   border-radius: 10px;
 }
 
@@ -4891,9 +4934,10 @@ div#les--secteurs .info--bottom-date-more .btn--chambre-representants {
 }
 
 
-.slider-voyages-internes-center .owl-stage-outer  .owl-item.active.center  .card.item-sectors .card-body {
+.slider-voyages-internes-center .owl-stage-outer .owl-item.active.center .card.item-sectors .card-body {
   opacity: 1;
 }
+
 div#les--secteurs h3:after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
@@ -4910,34 +4954,41 @@ div#les--secteurs h3 {
   position: relative;
 }
 
-.row.slider-element-maps .owl-stage >div:nth-child(3n+1) #les--secteurs h3 {
-    color: #008CD2;
+.row.slider-element-maps .owl-stage>div:nth-child(3n+1) #les--secteurs h3 {
+  color: #008CD2;
 }
 
-.row.slider-element-maps .owl-stage >div:nth-child(3n+2) #les--secteurs h3 { color: #00912D;
-                                                                           }
+.row.slider-element-maps .owl-stage>div:nth-child(3n+2) #les--secteurs h3 {
+  color: #00912D;
+}
 
-.row.slider-element-maps .owl-stage >div:nth-child(3n+3) #les--secteurs h3 {color: #F92600;}
-.row.slider-element-maps .owl-stage >div:nth-child(3n+1) a{
-    border-bottom: 2px solid #008CD2;
-    padding-bottom: 0 !important;
-    border-radius: 0;
+.row.slider-element-maps .owl-stage>div:nth-child(3n+3) #les--secteurs h3 {
+  color: #F92600;
 }
-.row.slider-element-maps .owl-stage >div:nth-child(3n+2) #les--secteurs {
-      border-bottom: 2px solid #00912D;
-    padding-bottom: 0 !important;
-    border-radius: 0;
+
+.row.slider-element-maps .owl-stage>div:nth-child(3n+1) #les--secteurs {
+  border-bottom: 2px solid #008CD2;
+  padding-bottom: 0 !important;
+  border-radius: 0;
 }
-.row.slider-element-maps .owl-stage >div:nth-child(3n+3) #les--secteurs {
-          border-bottom: 2px solid #F92600;
-    padding-bottom: 0 !important;
-    border-radius: 0;
+
+.row.slider-element-maps .owl-stage>div:nth-child(3n+2) #les--secteurs {
+  border-bottom: 2px solid #00912D;
+  padding-bottom: 0 !important;
+  border-radius: 0;
+}
+
+.row.slider-element-maps .owl-stage>div:nth-child(3n+3) #les--secteurs {
+  border-bottom: 2px solid #F92600;
+  padding-bottom: 0 !important;
+  border-radius: 0;
 }
 
 
 #les--secteurs {
-    border-radius: 0;
+  border-radius: 0;
 }
+
 .services_numeriques h3 {
   font-size: 14px;
   font-weight: bold;
@@ -4963,9 +5014,11 @@ div#les--secteurs h3 {
 .services_numeriques #les--secteurs .card-body {
   padding: 30px 0 0 0;
 }
+
 .services_numeriques div#les--secteurs h3:after {
   opacity: 0;
 }
+
 #owl--slider-v2 .sc-item a {
   display: flex;
   padding: 40px;
@@ -4981,7 +5034,7 @@ div#les--secteurs h3 {
   color: #B01A14;
 }
 
-#owl--slider-v2  .btn--chambre-representants {
+#owl--slider-v2 .btn--chambre-representants {
   display: flex;
   justify-content: left;
   align-items: baseline;
@@ -5002,7 +5055,7 @@ div#les--secteurs h3 {
   height: 366px;
 }
 
-#owl--slider-v2 .sc-item a >div {
+#owl--slider-v2 .sc-item a>div {
   width: 50%;
   border-radius: 10px;
 }
@@ -5022,6 +5075,7 @@ div#les--secteurs h3 {
 #owl--slider-v2 .btn--chambre-representants {
   position: relative;
 }
+
 .list-social-sticky ul li a {
   display: flex;
   align-items: center;
@@ -5046,9 +5100,149 @@ div#les--secteurs h3 {
   left: 5px;
   color: #fff;
 }
+
 .service--appende {
   position: absolute;
   top: calc(100% + 50px);
   left: 50%;
   transform: translateX(-50%);
+}
+
+.section--slider {
+  position: relative;
+  width: 100%;
+  /* height: 100vh; */
+  overflow: hidden;
+}
+
+.slider-main {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper-slider img,
+.wrapper-slider iframe,
+.wrapper-slider video {
+  max-width: 100%;
+  height: auto;
+}
+
+.paragraph-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Slider */
+.owl-items .wrapper-slider {
+  height: 100vh;
+}
+
+.owl-items>div .img {}
+
+.owl-items>div iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.owl-items>div video {
+  height: 100%;
+  width: 100%;
+}
+
+.owl-items>div img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(200deg, #0F1B5C 60%, #335AB7 100%);
+  z-index: 9999;
+  /* Ensure it covers all content */
+  animation: fadeOut 4s forwards;
+  /* Animate fade out after 4 seconds */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+/*  */
+.item-wrapper div:not([class]) a {
+  border: 1px solid #335AB7;
+  font-size: 18px;
+  color: #335AB7;
+  padding: 10px 25px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10px;
+  width: 190px;
+}
+
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+}
+
+.item-wrapper div:not([class]) {
+  display: flex;
+  gap: 0 20px;
+}
+.date-time-line span {
+  font-size: 20px;
+}
+section.wrapper--historique-des-chefs .btn--sc {
+  margin-top: 0;
+}
+.time--scrolle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  top: -20%; /* Initial position */
+  transition: top 1s ease-in-out; /* Smooth transition */
+}
+
+section.wrapper--historique-des-chefs {
+  position: relative;
+}
+/*  */
+.wrapper--historique-des-chefs {
+  position: relative;
+
+}
+
+.time--scrolle img {
+  position: relative;
+  transition: transform 0.3s ease-out; /* Smooth scroll effect */
+}
+
+.time--scrolle {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: -20%;
+  z-index: 0;
+}
+.filter_date {
+  z-index: 2;
+  position: relative;
+}
+.item-wrapper div:not([class]) a:hover {
+  background-color: #335AB7;
+  color: #fff;
 }
